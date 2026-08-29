@@ -1,0 +1,930 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Formula + Theory + Proof Vault · Math 2123</title>
+<meta name="description" content="Math 2123 formula, theory and proof vault.">
+<meta name="theme-color" content="#0b3b66">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\(','\)']] },svg:{fontCache:'global'}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<script defer src="assets/js/app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-mark">M³</span><span><b>Math 2123</b><small>Mathematics-III Guide</small></span></a>
+  <nav class="desktop-nav"><a class="nav-link " href="index.html">Home</a><a class="nav-link " href="section-a.html">Class Note A</a><a class="nav-link " href="section-b.html">Class Note B</a><a class="nav-link " href="question-bank-analysis.html">Question Bank Analysis</a><a class="nav-link " href="question-bank-solution.html">Question Bank Solution</a><a class="nav-link " href="backlog-preparation.html">Backlog Preparation</a><a class="nav-link active" href="formula-proof-vault.html">Formula + Proof Vault</a></nav>
+  <div class="header-actions"><button class="icon-btn" data-search-open aria-label="Search">⌕</button><button class="icon-btn" data-theme-toggle aria-label="Toggle theme">◐</button><button class="icon-btn mobile-only" data-menu-toggle aria-label="Menu">☰</button></div>
+</header>
+<div class="mobile-menu" data-mobile-menu><div class="mobile-menu-inner"><a class="nav-link " href="index.html">Home</a><a class="nav-link " href="section-a.html">Class Note A</a><a class="nav-link " href="section-b.html">Class Note B</a><a class="nav-link " href="question-bank-analysis.html">Question Bank Analysis</a><a class="nav-link " href="question-bank-solution.html">Question Bank Solution</a><a class="nav-link " href="backlog-preparation.html">Backlog Preparation</a><a class="nav-link active" href="formula-proof-vault.html">Formula + Proof Vault</a></div></div>
+<main id="main"><section class="page-hero compact"><div class="hero-copy"><span class="eyebrow">RAPID REVISION</span><h1>Formula + Theory + Proof Vault</h1><p>A fast-revision bank of formulas, definitions, theorems, proofs and derivations across all eight sets.</p><div class="hero-actions"><a class="btn primary" href="backlog-preparation.html">Backlog revision plan</a><a class="btn ghost" href="resources/formula-theory-proofs.pdf">PDF archive</a><button class="btn ghost" onclick="window.print()">Print page</button></div></div><div class="hero-chip">3 of 4 sets<br><strong>per section</strong></div></section>
+<div class="reading-layout"><aside class="toc-panel"><div class="toc-title">On this page</div><nav data-auto-toc></nav><div class="toc-tip">Your progress is saved on this device.</div></aside><article class="document-content"><p><span>KUET MATHEMATICS - III</span></p>
+<p><strong>FORMULA, THEORY</strong></p>
+<p>+ PROOF / DERIVATIONS</p>
+<p><span>Math 2123 | Section A + Section B | Set Distribution Edition</span></p>
+<div class="tcolorbox">
+<p><strong>Purpose</strong></p>
+<p>A compact but detailed exam handbook containing the formulas you must recall, the theory you must be able to define/explain, and the proofs/derivations that repeatedly appear in the uploaded KUET Math 2123 material. Repetition-heavy items are placed first inside each set.</p>
+</div>
+<div class="center">
+<p><span> <strong>Credit: Made by K.I.Rohan</strong></span></p>
+<p><span> Source-grounded from uploaded lecture notes, KUET term questions, topic-wise solved compilations and reference books.</span></p>
+</div>
+<h1 class="unnumbered" id="how-to-use-this-handbook">How to Use This Handbook</h1>
+<div class="theoryBox">
+<p>The handbook follows the same eight-set preparation map used in the question-bank analysis. Historical papers sometimes moved topics between sections, but the study map below keeps the preparation stable.</p>
+</div>
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Set</strong></th>
+<th style="text-align: left;">Dominant topic</th>
+<th style="text-align: left;">Repeat strength</th>
+<th style="text-align: left;">Best use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>A1</strong></td>
+<td style="text-align: left;">Matrix Fundamentals &amp; Core Theorems</td>
+<td style="text-align: left;">Very High</td>
+<td style="text-align: left;">Definitions and short proofs</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>A2</strong></td>
+<td style="text-align: left;">Inverse, Rank, Consistency &amp; Dependence</td>
+<td style="text-align: left;">Very High</td>
+<td style="text-align: left;">Mechanical row-operation logic</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>A3</strong></td>
+<td style="text-align: left;">Echelon/Normal Form &amp; Eigen Block</td>
+<td style="text-align: left;">Very High</td>
+<td style="text-align: left;">Long structured matrix problems</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>A4</strong></td>
+<td style="text-align: left;">Vector Kinematics, Work &amp; Cayley-Hamilton</td>
+<td style="text-align: left;">Med-High</td>
+<td style="text-align: left;">Formula-driven backup set</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>B5</strong></td>
+<td style="text-align: left;">Laplace Fundamentals &amp; Direct Transform</td>
+<td style="text-align: left;">Very High</td>
+<td style="text-align: left;">Fast formula marks; safest anchor</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>B6</strong></td>
+<td style="text-align: left;">Inverse Laplace, Convolution, ODE &amp; Beam</td>
+<td style="text-align: left;">Very High</td>
+<td style="text-align: left;">Long but highly structured</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>B7</strong></td>
+<td style="text-align: left;">Vector Differential Calculus</td>
+<td style="text-align: left;">Very High</td>
+<td style="text-align: left;">Short standardized methods</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>B8</strong></td>
+<td style="text-align: left;">Vector Integration</td>
+<td style="text-align: left;">Very High</td>
+<td style="text-align: left;">High marks; geometry and bounds matter</td>
+</tr>
+</tbody>
+</table></div>
+<div class="memoryBox">
+<p><strong>Section A:</strong> prepare A1-A3 first, keep A4 as a strong backup. <strong>Section B:</strong> B5 is the anchor; common routes are B5+B6+B7 or B5+B7+B8.</p>
+</div>
+<div class="memoryBox">
+<p>Difficult ideas are paired with short memory cues, while theorem names, formulas and exam notation remain in standard English.</p>
+</div>
+<h1 id="master-formula-sprint">Master Formula Sprint</h1>
+<h2 id="section-a---ultra-fast-recall">Section A - ultra-fast recall</h2>
+<div class="formulaBox">
+<p><span class="math display">\[\begin{aligned}
+A^T=A &amp;\quad\text{symmetric}, &amp; A^T=-A &amp;\quad\text{skew-symmetric},\\
+A^TA=I &amp;\quad\text{orthogonal}, &amp; A^2=A &amp;\quad\text{idempotent},\\
+A^2=I &amp;\quad\text{involutory}, &amp; A^k=0 &amp;\quad\text{nilpotent for some }k\ge1,\\
+A&amp;=\tfrac12(A+A^T)+\tfrac12(A-A^T),\\
+\det A\ne0 &amp;\Longleftrightarrow \operatorname{rank}A=n \Longleftrightarrow A^{-1}\text{ exists},\\
+\det(A-\lambda I)&amp;=0, &amp; (A-\lambda I)x&amp;=0,\\
+A=PDP^{-1}, &amp; p(\lambda)=\det(\lambda I-A)&amp;\Longrightarrow p(A)=0,\\
+r'(t)&amp;=v(t), &amp; r''(t)&amp;=a(t),\\
+T&amp;=\frac{r'}{|r'|}, &amp; B&amp;=\frac{r'\times r''}{|r'\times r''|},\qquad N=B\times T,\\
+\kappa&amp;=\frac{|r'\times r''|}{|r'|^3}, &amp; \tau&amp;=\frac{(r'\times r'')\cdot r'''}{|r'\times r''|^2},\\
+W&amp;=\int_C F\cdot dr.
+\end{aligned}\]</span></p>
+</div>
+<h2 id="section-b---ultra-fast-recall">Section B - ultra-fast recall</h2>
+<div class="formulaBox">
+<p><span class="math display">\[\begin{aligned}
+\mathcal L\{f\}(s)&amp;=\int_0^\infty e^{-st}f(t)\,dt,\\
+\mathcal L\{t^n\}&amp;=\frac{n!}{s^{n+1}},\quad
+\mathcal L\{e^{at}\}=\frac1{s-a},\\
+\mathcal L\{\sin at\}&amp;=\frac{a}{s^2+a^2},\quad
+\mathcal L\{\cos at\}=\frac{s}{s^2+a^2},\\
+\mathcal L\{e^{at}f(t)\}&amp;=F(s-a),\\
+\mathcal L\{t^n f(t)\}&amp;=(-1)^n F^{(n)}(s),\\
+\mathcal L\{f'\}&amp;=sF-f(0),\quad
+\mathcal L\{f''\}=s^2F-sf(0)-f'(0),\\
+\mathcal L\left\{\int_0^t f(u)\,du\right\}&amp;=\frac{F(s)}s,\\
+\mathcal L\{f(t-a)u(t-a)\}&amp;=e^{-as}F(s),\\
+\mathcal L\{f\}_{\text{period }T}&amp;=\frac{\int_0^T e^{-st}f(t)\,dt}{1-e^{-sT}},\\
+\mathcal L^{-1}\{F(s)G(s)\}&amp;=\int_0^t f(u)g(t-u)\,du,\\
+\nabla\phi&amp;=(\phi_x,\phi_y,\phi_z),\quad
+\nabla\cdot F=P_x+Q_y+R_z,\\
+\nabla\times F&amp;=\begin{vmatrix}i&amp;j&amp;k\\\partial_x&amp;\partial_y&amp;\partial_z\\P&amp;Q&amp;R\end{vmatrix},\\
+D_{\hat u}\phi&amp;=\nabla\phi\cdot\hat u,\quad \max D_{\hat u}\phi=|\nabla\phi|,\\
+\oint_C P\,dx+Q\,dy&amp;=\iint_R(Q_x-P_y)\,dA,\\
+\oint_C F\cdot dr&amp;=\iint_S(\nabla\times F)\cdot n\,dS,\\
+\iint_{\partial V}F\cdot n\,dS&amp;=\iiint_V\nabla\cdot F\,dV.
+\end{aligned}\]</span></p>
+</div>
+<h1 id="section-a">Section A</h1>
+<h2 id="set-a1---matrix-fundamentals-core-theorems">Set A1 - Matrix Fundamentals &amp; Core Theorems</h2>
+<p><span style="color: Red"><strong>VERY HIGH PRIORITY</strong></span> <span><span style="color: Gray">QB: 2015-2025 recurring theory family</span></span></p>
+<h3 id="matrix-type-master-table">Matrix type master table</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Type</strong></th>
+<th style="text-align: left;">Test / definition</th>
+<th style="text-align: left;">Memory / immediate consequence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Square</strong></td>
+<td style="text-align: left;"><span class="math inline">\(m=n\)</span></td>
+<td style="text-align: left;">same number of rows and columns</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Diagonal</strong></td>
+<td style="text-align: left;"><span class="math inline">\(a_{ij}=0\)</span> for <span class="math inline">\(i\ne j\)</span></td>
+<td style="text-align: left;">only main diagonal may be nonzero</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Scalar</strong></td>
+<td style="text-align: left;">diagonal with all diagonal entries equal</td>
+<td style="text-align: left;"><span class="math inline">\(cI\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Identity</strong></td>
+<td style="text-align: left;">scalar with diagonal entries <span class="math inline">\(1\)</span></td>
+<td style="text-align: left;">multiplicative identity</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Upper triangular</strong></td>
+<td style="text-align: left;"><span class="math inline">\(a_{ij}=0\)</span> for <span class="math inline">\(i&gt;j\)</span></td>
+<td style="text-align: left;">entries below diagonal are zero</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Lower triangular</strong></td>
+<td style="text-align: left;"><span class="math inline">\(a_{ij}=0\)</span> for <span class="math inline">\(i&lt;j\)</span></td>
+<td style="text-align: left;">entries above diagonal are zero</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Symmetric</strong></td>
+<td style="text-align: left;"><span class="math inline">\(A^T=A\)</span></td>
+<td style="text-align: left;">mirror across main diagonal</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Skew-symmetric</strong></td>
+<td style="text-align: left;"><span class="math inline">\(A^T=-A\)</span></td>
+<td style="text-align: left;">diagonal entries are zero</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Orthogonal</strong></td>
+<td style="text-align: left;"><span class="math inline">\(A^TA=AA^T=I\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(A^{-1}=A^T\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Singular</strong></td>
+<td style="text-align: left;"><span class="math inline">\(\det A=0\)</span></td>
+<td style="text-align: left;">inverse does not exist</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Non-singular</strong></td>
+<td style="text-align: left;"><span class="math inline">\(\det A\ne0\)</span></td>
+<td style="text-align: left;">inverse exists</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Idempotent</strong></td>
+<td style="text-align: left;"><span class="math inline">\(A^2=A\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(A^n=A\)</span> for <span class="math inline">\(n\ge1\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Involutory</strong></td>
+<td style="text-align: left;"><span class="math inline">\(A^2=I\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(A^{-1}=A\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Nilpotent</strong></td>
+<td style="text-align: left;"><span class="math inline">\(A^k=0\)</span> for some <span class="math inline">\(k\ge1\)</span></td>
+<td style="text-align: left;">all eigenvalues are zero</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Hermitian</strong></td>
+<td style="text-align: left;"><span class="math inline">\(A^\dagger=A\)</span></td>
+<td style="text-align: left;">complex analogue of symmetric</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Skew-Hermitian</strong></td>
+<td style="text-align: left;"><span class="math inline">\(A^\dagger=-A\)</span></td>
+<td style="text-align: left;">diagonal entries purely imaginary or zero</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Elementary</strong></td>
+<td style="text-align: left;">obtained from <span class="math inline">\(I\)</span> by one elementary operation</td>
+<td style="text-align: left;">one-operation matrix</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Equivalent</strong></td>
+<td style="text-align: left;"><span class="math inline">\(B=PAQ\)</span> with <span class="math inline">\(P,Q\)</span> nonsingular</td>
+<td style="text-align: left;">reachable by row and column operations</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Trace</strong></td>
+<td style="text-align: left;"><span class="math inline">\(\operatorname{tr}(A)=\sum_i a_{ii}\)</span></td>
+<td style="text-align: left;">diagonal sum</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Principal submatrix</strong></td>
+<td style="text-align: left;">retain same index set of rows and columns</td>
+<td style="text-align: left;">diagonal subset preserved</td>
+</tr>
+</tbody>
+</table></div>
+<div class="memoryBox">
+<p>Identity <span class="math inline">\(\subset\)</span> Scalar <span class="math inline">\(\subset\)</span> Diagonal. Each step adds a stronger condition.</p>
+</div>
+<div class="formulaBox">
+<p>For every real square matrix, <span class="math display">\[A=P+Q,\qquad P=\frac12(A+A^T),\qquad Q=\frac12(A-A^T),\]</span> where <span class="math inline">\(P^T=P\)</span> and <span class="math inline">\(Q^T=-Q\)</span>. For complex matrices, replace <span class="math inline">\(A^T\)</span> by <span class="math inline">\(A^\dagger\)</span> to obtain Hermitian and skew-Hermitian parts.</p>
+</div>
+<div class="proofBox">
+<p>Let <span class="math inline">\(A=[a_{ij}]\)</span> and <span class="math inline">\(A^T=-A\)</span>. Elementwise, <span class="math inline">\(a_{ji}=-a_{ij}\)</span>. Put <span class="math inline">\(i=j\)</span>: <span class="math display">\[a_{ii}=-a_{ii}\quad\Rightarrow\quad 2a_{ii}=0\quad\Rightarrow\quad a_{ii}=0.\]</span> Since <span class="math inline">\(i\)</span> is arbitrary, every diagonal entry is zero.</p>
+</div>
+<div class="proofBox">
+<p>If <span class="math inline">\(A^T=A\)</span> and <span class="math inline">\(A\)</span> is nonsingular, then <span class="math display">\[(A^{-1})^T=(A^T)^{-1}=A^{-1}.\]</span> Hence <span class="math inline">\(A^{-1}\)</span> is symmetric.</p>
+</div>
+<div class="proofBox">
+<p>Define <span class="math display">\[P=\frac12(A+A^T),\qquad Q=\frac12(A-A^T).\]</span> Then <span class="math display">\[P^T=\frac12(A^T+A)=P,\qquad Q^T=\frac12(A^T-A)=-Q,\]</span> and <span class="math inline">\(P+Q=A\)</span>.</p>
+<p>For uniqueness, suppose <span class="math inline">\(A=R+S\)</span> where <span class="math inline">\(R^T=R\)</span> and <span class="math inline">\(S^T=-S\)</span>. Then <span class="math display">\[A^T=R-S.\]</span> Adding and subtracting the equations, <span class="math display">\[R=\frac12(A+A^T)=P,\qquad S=\frac12(A-A^T)=Q.\]</span> Thus the decomposition is unique.</p>
+</div>
+<div class="proofBox">
+<p>Given <span class="math inline">\(A^2=I\)</span>, let <span class="math inline">\(P=\frac12(I+A)\)</span>. Then <span class="math display">\[P^2=\frac14(I+2A+A^2)=\frac14(2I+2A)=\frac12(I+A)=P.\]</span> Similarly, for <span class="math inline">\(Q=\frac12(I-A)\)</span>, <span class="math display">\[Q^2=\frac14(I-2A+A^2)=\frac12(I-A)=Q.\]</span> Hence both are idempotent.</p>
+</div>
+<div class="proofBox">
+<p>Let the rows be <span class="math inline">\((l_i,m_i,n_i)\)</span>, <span class="math inline">\(i=1,2,3\)</span>, representing direction cosines of three mutually perpendicular unit directions. Then <span class="math display">\[l_i^2+m_i^2+n_i^2=1,\]</span> and for <span class="math inline">\(i\ne j\)</span>, <span class="math display">\[l_il_j+m_im_j+n_in_j=0.\]</span> Therefore the <span class="math inline">\((i,j)\)</span> entry of <span class="math inline">\(AA^T\)</span> is <span class="math inline">\(1\)</span> when <span class="math inline">\(i=j\)</span> and <span class="math inline">\(0\)</span> otherwise. Hence <span class="math display">\[AA^T=I,\]</span> so <span class="math inline">\(A\)</span> is orthogonal.</p>
+</div>
+<div class="warnBox">
+<p>In general <span class="math inline">\(AB\ne BA\)</span>. Also <span class="math inline">\(AB=0\)</span> does not force <span class="math inline">\(A=0\)</span> or <span class="math inline">\(B=0\)</span>, and cancellation <span class="math inline">\(AB=AC\Rightarrow B=C\)</span> requires suitable invertibility assumptions.</p>
+</div>
+<h2 id="set-a2---inverse-rank-consistency-linear-dependence">Set A2 - Inverse, Rank, Consistency &amp; Linear Dependence</h2>
+<p><span style="color: Red"><strong>VERY HIGH PRIORITY</strong></span></p>
+<div class="formulaBox">
+<ul>
+<li><p>Row swap: <span class="math inline">\(R_i\leftrightarrow R_j\)</span>.</p></li>
+<li><p>Scaling: <span class="math inline">\(R_i\to kR_i\)</span>, <span class="math inline">\(k\ne0\)</span>.</p></li>
+<li><p>Replacement: <span class="math inline">\(R_i\to R_i+kR_j\)</span>.</p></li>
+</ul>
+<p>Gauss-Jordan inverse: <span class="math display">\[[A\mid I]\xrightarrow{\text{same row operations}}[I\mid A^{-1}],\]</span> possible exactly when <span class="math inline">\(A\)</span> is nonsingular.</p>
+</div>
+<div class="formulaBox">
+<p>For an <span class="math inline">\(n\times n\)</span> matrix, <span class="math display">\[\det A\ne0\iff \operatorname{rank}A=n\iff A^{-1}\text{ exists}\iff Ax=0\text{ has only the trivial solution}.\]</span></p>
+</div>
+<div class="theoryBox">
+<p><span class="math inline">\(\operatorname{rank}(A)\)</span> is the maximum number of linearly independent rows (equivalently columns). Under elementary row or column operations, rank is unchanged. In echelon form, rank equals the number of pivots / nonzero rows.</p>
+</div>
+<div class="formulaBox">
+<p>For <span class="math inline">\(Ax=b\)</span> with <span class="math inline">\(n\)</span> unknowns, let <span class="math inline">\(r=\operatorname{rank}(A)\)</span> and <span class="math inline">\(r_a=\operatorname{rank}([A\mid b])\)</span>. <span class="math display">\[\begin{array}{lll}
+r\ne r_a &amp;\Rightarrow&amp; \text{inconsistent (no solution)},\\
+r=r_a=n &amp;\Rightarrow&amp; \text{unique solution},\\
+r=r_a&lt;n &amp;\Rightarrow&amp; \text{infinitely many solutions}.
+\end{array}\]</span></p>
+</div>
+<div class="memoryBox">
+<p>Look for a relation among coefficient rows first. The same relation must also hold among the right-hand sides; otherwise the augmented rank increases.</p>
+</div>
+<div class="theoryBox">
+<p><span class="math inline">\(v_1,\ldots,v_k\)</span> are linearly independent if <span class="math display">\[c_1v_1+\cdots+c_kv_k=0\]</span> implies <span class="math inline">\(c_1=\cdots=c_k=0\)</span>. Put the vectors as columns of <span class="math inline">\(M\)</span>: if <span class="math inline">\(\operatorname{rank}(M)=k\)</span>, they are independent; otherwise dependent.</p>
+</div>
+<div class="formulaBox">
+<p><span class="math inline">\(Ax=0\)</span> always has the trivial solution <span class="math inline">\(x=0\)</span>. A nontrivial solution exists iff there is a free variable: <span class="math display">\[\operatorname{rank}(A)&lt;n.\]</span> For square <span class="math inline">\(A\)</span>, this is equivalent to <span class="math inline">\(\det A=0\)</span>.</p>
+</div>
+<h2 id="set-a3---echelon-normal-form-eigenvalue-block">Set A3 - Echelon / Normal Form &amp; Eigenvalue Block</h2>
+<p><span style="color: Red"><strong>VERY HIGH PRIORITY</strong></span></p>
+<div class="theoryBox">
+<p><strong>REF:</strong> nonzero rows above zero rows, pivot positions move rightward, and entries below each pivot are zero.</p>
+<p><strong>RREF / row canonical form:</strong> REF plus every pivot is <span class="math inline">\(1\)</span> and is the only nonzero entry in its column.</p>
+<p><strong>Normal form under equivalence:</strong> <span class="math display">\[PAQ=\begin{bmatrix}I_r&amp;0\\0&amp;0\end{bmatrix},\]</span> using row and column operations; the identity-block order <span class="math inline">\(r\)</span> is the rank.</p>
+</div>
+<div class="memoryBox">
+<p>Row operations correspond to left multiplication (<span class="math inline">\(P A\)</span>). Column operations correspond to right multiplication (<span class="math inline">\(A Q\)</span>). Do not reverse the sides.</p>
+</div>
+<div class="formulaBox">
+<p><span class="math display">\[Ax=\lambda x,\qquad x\ne0.\]</span> D-S-V algorithm:</p>
+<ol>
+<li><p><strong>D</strong>: solve <span class="math inline">\(\det(A-\lambda I)=0\)</span>.</p></li>
+<li><p><strong>S</strong>: obtain the eigenvalues <span class="math inline">\(\lambda\)</span>.</p></li>
+<li><p><strong>V</strong>: for each <span class="math inline">\(\lambda\)</span>, solve <span class="math inline">\((A-\lambda I)x=0\)</span> and choose a nonzero solution.</p></li>
+</ol>
+</div>
+<div class="formulaBox">
+<ul>
+<li><p>Sum of eigenvalues (with algebraic multiplicity): <span class="math inline">\(\sum\lambda_i=\operatorname{tr}(A)\)</span>.</p></li>
+<li><p>Product: <span class="math inline">\(\prod\lambda_i=\det A\)</span>.</p></li>
+<li><p>Triangular matrix: eigenvalues are its diagonal entries.</p></li>
+<li><p><span class="math inline">\(A\)</span> and <span class="math inline">\(A^T\)</span> have the same characteristic polynomial.</p></li>
+<li><p>If <span class="math inline">\(A\)</span> is invertible, eigenvalues of <span class="math inline">\(A^{-1}\)</span> are <span class="math inline">\(1/\lambda_i\)</span>.</p></li>
+<li><p>If <span class="math inline">\(Ax=\lambda x\)</span>, then <span class="math inline">\(A^m x=\lambda^m x\)</span>.</p></li>
+<li><p>Eigenvectors belonging to distinct eigenvalues are linearly independent.</p></li>
+<li><p>For real symmetric <span class="math inline">\(A\)</span>, eigenvalues are real; eigenvectors for distinct eigenvalues are orthogonal.</p></li>
+</ul>
+</div>
+<div class="formulaBox">
+<p><span class="math display">\[A=PDP^{-1}\qquad\Longleftrightarrow\qquad P^{-1}AP=D,\]</span> where the columns of <span class="math inline">\(P\)</span> are linearly independent eigenvectors and the corresponding eigenvalues appear in the same order on the diagonal of <span class="math inline">\(D\)</span>. An <span class="math inline">\(n\times n\)</span> matrix is diagonalizable if it has <span class="math inline">\(n\)</span> linearly independent eigenvectors.</p>
+</div>
+<h2 id="set-a4---vector-kinematics-work-cayley-hamilton">Set A4 - Vector Kinematics, Work &amp; Cayley-Hamilton</h2>
+<p><span style="color: Red"><strong>MEDIUM-HIGH PRIORITY / STRONG BACKUP</strong></span></p>
+<div class="formulaBox">
+<p><span class="math display">\[r(t)=x(t)i+y(t)j+z(t)k,\qquad v=r'(t),\qquad |v|=\text{speed},\qquad a=r''(t).\]</span> Acceleration decomposition: <span class="math display">\[a=a_TT+a_NN,\qquad a_T=\frac{d|v|}{dt},\qquad a_N=\kappa |v|^2.\]</span></p>
+</div>
+<div class="formulaBox">
+<p><span class="math display">\[T=\frac{r'}{|r'|},\qquad B=\frac{r'\times r''}{|r'\times r''|},\qquad N=B\times T,\]</span> <span class="math display">\[\kappa=\frac{|r'\times r''|}{|r'|^3},\qquad
+\tau=\frac{(r'\times r'')\cdot r'''}{|r'\times r''|^2}.\]</span> At <span class="math inline">\(r_0\)</span>: <span class="math display">\[\text{normal plane: }T\cdot(r-r_0)=0,
+\quad \text{osculating plane: }B\cdot(r-r_0)=0,
+\quad \text{rectifying plane: }N\cdot(r-r_0)=0.\]</span></p>
+</div>
+<div class="theoryBox">
+<p><span class="math inline">\(T\)</span> is tangent to the curve, <span class="math inline">\(N\)</span> points toward local bending, and <span class="math inline">\(B=T\times N\)</span> completes the orthonormal frame. Curvature measures bending; torsion measures twisting out of the osculating plane.</p>
+</div>
+<div class="formulaBox">
+<p>For <span class="math inline">\(F=Pi+Qj+Rk\)</span>, <span class="math display">\[W=\int_C F\cdot dr=\int_C(P\,dx+Q\,dy+R\,dz).\]</span> For a straight line from <span class="math inline">\(A\)</span> to <span class="math inline">\(B\)</span>, use <span class="math display">\[r(t)=A+t(B-A),\qquad 0\le t\le1.\]</span> For a piecewise path, evaluate each segment separately and add.</p>
+</div>
+<div class="proofBox">
+<p>The uploaded theory compilation asks for the identity <span class="math display">\[A\times(B\times C)=B(A\cdot C)-C(A\cdot B).\]</span> For completeness, a standard component derivation is included here. Using the Levi-Civita symbol, <span class="math display">\[[A\times(B\times C)]_i=\varepsilon_{ijk}A_j\varepsilon_{klm}B_lC_m.\]</span> Since <span class="math display">\[\varepsilon_{ijk}\varepsilon_{klm}=\delta_{il}\delta_{jm}-\delta_{im}\delta_{jl},\]</span> we obtain <span class="math display">\[[A\times(B\times C)]_i=B_i(A_jC_j)-C_i(A_jB_j),\]</span> which is exactly <span class="math display">\[A\times(B\times C)=B(A\cdot C)-C(A\cdot B).\]</span> Now cyclically permute <span class="math inline">\(A,B,C\)</span> and add the three identities. Every term cancels because the dot product is commutative, giving <span class="math display">\[A\times(B\times C)+B\times(C\times A)+C\times(A\times B)=0.\]</span></p>
+</div>
+<div class="formulaBox">
+<p>If <span class="math display">\[p(\lambda)=\det(\lambda I-A),\]</span> then every square matrix satisfies <span class="math display">\[p(A)=0.\]</span> If the constant term is nonzero (so <span class="math inline">\(A\)</span> is invertible), multiply the matrix identity by <span class="math inline">\(A^{-1}\)</span> and isolate <span class="math inline">\(A^{-1}\)</span>. The same identity reduces high powers <span class="math inline">\(A^n\)</span> to lower powers.</p>
+</div>
+<h1 id="section-b">Section B</h1>
+<h2 id="set-b5---laplace-fundamentals-direct-transform">Set B5 - Laplace Fundamentals &amp; Direct Transform</h2>
+<p><span style="color: Red"><strong>VERY HIGH PRIORITY / SAFEST ANCHOR</strong></span></p>
+<div class="theoryBox">
+<p><span class="math display">\[\mathcal L\{f(t)\}=F(s)=\int_0^\infty e^{-st}f(t)\,dt.\]</span> A standard sufficient condition for existence is: <span class="math inline">\(f\)</span> is piecewise continuous on every finite interval and is of exponential order <span class="math inline">\(\alpha\)</span>, i.e. <span class="math inline">\(|f(t)|\le Me^{\alpha t}\)</span> for all sufficiently large <span class="math inline">\(t\)</span>. These conditions are sufficient, not necessary.</p>
+</div>
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong><span class="math inline">\(f(t)\)</span></strong></th>
+<th style="text-align: left;"><span class="math inline">\(\mathcal L\{f(t)\}\)</span></th>
+<th style="text-align: left;">Cue</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong><span class="math inline">\(1\)</span></strong></td>
+<td style="text-align: left;"><span class="math inline">\(1/s\)</span></td>
+<td style="text-align: left;">constant</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><span class="math inline">\(t^n\)</span></strong></td>
+<td style="text-align: left;"><span class="math inline">\(n!/s^{n+1}\)</span></td>
+<td style="text-align: left;">power <span class="math inline">\(\to\)</span> factorial</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong><span class="math inline">\(e^{at}\)</span></strong></td>
+<td style="text-align: left;"><span class="math inline">\(1/(s-a)\)</span></td>
+<td style="text-align: left;">shift of <span class="math inline">\(s\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><span class="math inline">\(\sin at\)</span></strong></td>
+<td style="text-align: left;"><span class="math inline">\(a/(s^2+a^2)\)</span></td>
+<td style="text-align: left;">sine numerator <span class="math inline">\(a\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong><span class="math inline">\(\cos at\)</span></strong></td>
+<td style="text-align: left;"><span class="math inline">\(s/(s^2+a^2)\)</span></td>
+<td style="text-align: left;">cosine numerator <span class="math inline">\(s\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><span class="math inline">\(\sinh at\)</span></strong></td>
+<td style="text-align: left;"><span class="math inline">\(a/(s^2-a^2)\)</span></td>
+<td style="text-align: left;">hyperbolic: minus in denominator</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong><span class="math inline">\(\cosh at\)</span></strong></td>
+<td style="text-align: left;"><span class="math inline">\(s/(s^2-a^2)\)</span></td>
+<td style="text-align: left;">hyperbolic: minus in denominator</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><span class="math inline">\(u(t-a)\)</span></strong></td>
+<td style="text-align: left;"><span class="math inline">\(e^{-as}/s\)</span></td>
+<td style="text-align: left;">delayed switch</td>
+</tr>
+</tbody>
+</table></div>
+<div class="formulaBox">
+<p>If <span class="math inline">\(\mathcal L\{f\}=F(s)\)</span>: <span class="math display">\[\begin{aligned}
+\mathcal L\{af+bg\}&amp;=aF+bG,\\
+\mathcal L\{e^{at}f(t)\}&amp;=F(s-a),\\
+\mathcal L\{f(at)\}&amp;=\frac1aF\!\left(\frac{s}{a}\right),\qquad a&gt;0,\\
+\mathcal L\{t^nf(t)\}&amp;=(-1)^n\frac{d^nF}{ds^n},\\
+\mathcal L\{f'(t)\}&amp;=sF(s)-f(0),\\
+\mathcal L\{f''(t)\}&amp;=s^2F-sf(0)-f'(0),\\
+\mathcal L\left\{\int_0^t f(u)du\right\}&amp;=\frac{F(s)}{s},\\
+\mathcal L\left\{\frac{f(t)}t\right\}&amp;=\int_s^\infty F(u)\,du\quad\text{(when the required convergence holds)}.
+\end{aligned}\]</span></p>
+</div>
+<div class="formulaBox">
+<p><span class="math display">\[u(t-a)=\begin{cases}0,&amp;t&lt;a,\\1,&amp;t\ge a,\end{cases}
+\qquad \mathcal L\{u(t-a)\}=\frac{e^{-as}}s.\]</span> If <span class="math inline">\(\mathcal L\{f(t)\}=F(s)\)</span>, <span class="math display">\[\mathcal L\{f(t-a)u(t-a)\}=e^{-as}F(s).\]</span> More generally, <span class="math display">\[\mathcal L\{g(t)u(t-a)\}=e^{-as}\mathcal L\{g(t+a)\}.\]</span></p>
+</div>
+<div class="memoryBox">
+<p>Start with the first expression, then at each switch point add <span class="math display">\[(\text{new expression}-\text{old expression})u(t-a).\]</span> This is the safest construction rule for converting a piecewise function into unit-step form.</p>
+</div>
+<div class="formulaBox">
+<p>If <span class="math inline">\(f(t+T)=f(t)\)</span>, <span class="math display">\[\mathcal L\{f(t)\}=\frac{\int_0^T e^{-st}f(t)\,dt}{1-e^{-sT}}.\]</span> Integrate only one full period; if it is piecewise, split only inside <span class="math inline">\([0,T]\)</span>.</p>
+</div>
+<div class="proofBox">
+<p><span class="math display">\[\mathcal L\{c_1f+c_2g\}
+=\int_0^\infty e^{-st}[c_1f(t)+c_2g(t)]dt
+=c_1F(s)+c_2G(s).\]</span></p>
+</div>
+<div class="proofBox">
+<p>If <span class="math inline">\(F(s)=\mathcal L\{f(t)\}\)</span>, then <span class="math display">\[\mathcal L\{e^{at}f(t)\}
+=\int_0^\infty e^{-st}e^{at}f(t)dt
+=\int_0^\infty e^{-(s-a)t}f(t)dt
+=F(s-a).\]</span></p>
+</div>
+<div class="proofBox">
+<p>Assuming the boundary term vanishes at infinity, <span class="math display">\[\begin{aligned}
+\mathcal L\{f'(t)\}
+&amp;=\int_0^\infty e^{-st}f'(t)dt\\
+&amp;=\left[e^{-st}f(t)\right]_0^\infty+s\int_0^\infty e^{-st}f(t)dt\\
+&amp;=sF(s)-f(0).
+\end{aligned}\]</span> Repeated application gives <span class="math display">\[\mathcal L\{f^{(n)}\}=s^nF-s^{n-1}f(0)-\cdots-f^{(n-1)}(0).\]</span></p>
+</div>
+<div class="proofBox">
+<p>Let <span class="math display">\[g(t)=\int_0^t f(u)du.\]</span> Then <span class="math inline">\(g'(t)=f(t)\)</span> and <span class="math inline">\(g(0)=0\)</span>. Taking transforms of <span class="math inline">\(g'\)</span>, <span class="math display">\[F(s)=sG(s)-0\quad\Rightarrow\quad G(s)=\frac{F(s)}s.\]</span> Therefore <span class="math display">\[\mathcal L\left\{\int_0^t f(u)du\right\}=\frac{F(s)}s.\]</span></p>
+</div>
+<div class="proofBox">
+<p>Differentiate the defining integral with respect to <span class="math inline">\(s\)</span> (under the usual validity conditions): <span class="math display">\[F'(s)=\frac{d}{ds}\int_0^\infty e^{-st}f(t)dt
+=\int_0^\infty(-t)e^{-st}f(t)dt.\]</span> Hence <span class="math display">\[\mathcal L\{tf(t)\}=-F'(s),\]</span> and repeated differentiation yields <span class="math display">\[\mathcal L\{t^nf(t)\}=(-1)^nF^{(n)}(s).\]</span></p>
+</div>
+<div class="proofBox">
+<p>Let <span class="math inline">\(G(s)=\mathcal L\{f(t)/t\}\)</span>. Then, using the multiplication property on <span class="math inline">\(g(t)=f(t)/t\)</span>, <span class="math display">\[F(s)=\mathcal L\{t g(t)\}=-G'(s).\]</span> Thus <span class="math inline">\(G'(s)=-F(s)\)</span>. If <span class="math inline">\(G(s)\to0\)</span> as <span class="math inline">\(s\to\infty\)</span>, integration from <span class="math inline">\(s\)</span> to <span class="math inline">\(\infty\)</span> gives <span class="math display">\[G(s)=\int_s^\infty F(u)du.\]</span> So <span class="math display">\[\mathcal L\left\{\frac{f(t)}t\right\}=\int_s^\infty F(u)du,\]</span> provided the relevant improper integrals converge.</p>
+</div>
+<div class="proofBox">
+<p>Split the defining integral into periods: <span class="math display">\[\int_0^\infty e^{-st}f(t)dt=\sum_{n=0}^\infty\int_{nT}^{(n+1)T}e^{-st}f(t)dt.\]</span> Put <span class="math inline">\(t=u+nT\)</span> and use <span class="math inline">\(f(u+nT)=f(u)\)</span>: <span class="math display">\[=\sum_{n=0}^\infty e^{-snT}\int_0^T e^{-su}f(u)du.\]</span> The geometric series sums to <span class="math inline">\(1/(1-e^{-sT})\)</span>, hence <span class="math display">\[\mathcal L\{f\}=\frac{\int_0^T e^{-st}f(t)dt}{1-e^{-sT}}.\]</span></p>
+</div>
+<div class="proofBox">
+<p>Near <span class="math inline">\(t=0\)</span>, <span class="math display">\[\frac{e^{-st}\cos(at)}t\sim\frac1t.\]</span> Therefore the defining integral contains the divergent improper behavior <span class="math display">\[\int_0^\varepsilon \frac{dt}{t}=\infty.\]</span> Hence the Laplace transform of <span class="math inline">\(\cos(at)/t\)</span> does not exist as an ordinary improper Laplace integral.</p>
+</div>
+<div class="formulaBox">
+<p>For <span class="math inline">\(a&gt;0\)</span> and <span class="math inline">\(s&gt;0\)</span>, <span class="math display">\[\mathcal L\left\{\frac{\sin at}{t}\right\}
+=\int_s^\infty \frac{a}{u^2+a^2}\,du
+=\tan^{-1}\!\left(\frac{a}{s}\right).\]</span></p>
+</div>
+<div class="proofBox">
+<p>First derive the Dirichlet integral by Laplace regularization. Define <span class="math display">\[J(a,s)=\int_0^\infty e^{-st}\frac{\sin(at)}{t}dt,\qquad s&gt;0.\]</span> Differentiate with respect to <span class="math inline">\(a\)</span>: <span class="math display">\[\frac{\partial J}{\partial a}=\int_0^\infty e^{-st}\cos(at)dt=\frac{s}{s^2+a^2}.\]</span> Since <span class="math inline">\(J(0,s)=0\)</span>, <span class="math display">\[J(a,s)=\int_0^a\frac{s}{s^2+u^2}du=\tan^{-1}\!\left(\frac{a}{s}\right).\]</span> Let <span class="math inline">\(s\to0^+\)</span>: for <span class="math inline">\(a&gt;0\)</span>, <span class="math display">\[\int_0^\infty\frac{\sin(at)}t dt=\frac\pi2.\]</span> Now integrate by parts: <span class="math display">\[I=\int_0^\infty\frac{\sin^2 t}{t^2}dt
+=\int_0^\infty\frac{\sin 2t}{t}dt
+=\frac\pi2.\]</span> (The boundary term vanishes at <span class="math inline">\(0\)</span> and <span class="math inline">\(\infty\)</span>.)</p>
+</div>
+<h2 id="set-b6---inverse-laplace-convolution-ode-beam">Set B6 - Inverse Laplace, Convolution, ODE &amp; Beam</h2>
+<p><span style="color: Red"><strong>VERY HIGH PRIORITY</strong></span></p>
+<div class="theoryBox">
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Pattern</strong></th>
+<th style="text-align: left;">Best first method</th>
+<th style="text-align: left;">Recognition clue</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>factorable rational function</strong></td>
+<td style="text-align: left;">partial fractions</td>
+<td style="text-align: left;">linear / repeated / quadratic factors</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>quadratic in shifted <span class="math inline">\(s\)</span></strong></td>
+<td style="text-align: left;">complete square + first shift</td>
+<td style="text-align: left;"><span class="math inline">\((s-a)^2+b^2\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>simple distinct denominator roots</strong></td>
+<td style="text-align: left;">Heaviside expansion</td>
+<td style="text-align: left;">residue <span class="math inline">\(P(a_k)/Q'(a_k)\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>product of two known transforms</strong></td>
+<td style="text-align: left;">convolution</td>
+<td style="text-align: left;"><span class="math inline">\(F(s)G(s)\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong><span class="math inline">\(e^{-as}F(s)\)</span></strong></td>
+<td style="text-align: left;">second shift / unit step</td>
+<td style="text-align: left;">time delay <span class="math inline">\(a\)</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="formulaBox">
+<p><span class="math display">\[\begin{aligned}
+\mathcal L^{-1}\left\{\frac1{s-a}\right\}&amp;=e^{at},\\
+\mathcal L^{-1}\left\{\frac{s-a}{(s-a)^2+b^2}\right\}&amp;=e^{at}\cos bt,\\
+\mathcal L^{-1}\left\{\frac{b}{(s-a)^2+b^2}\right\}&amp;=e^{at}\sin bt,\\
+\mathcal L^{-1}\left\{\frac1{(s-a)^2-b^2}\right\}&amp;=\frac1b e^{at}\sinh bt.
+\end{aligned}\]</span> For distinct simple roots <span class="math inline">\(a_k\)</span> of <span class="math inline">\(Q\)</span>, <span class="math display">\[\frac{P(s)}{Q(s)}=\sum_k\frac{P(a_k)}{Q'(a_k)}\frac1{s-a_k}.\]</span></p>
+</div>
+<div class="proofBox">
+<p>For <span class="math display">\[(f*g)(t)=\int_0^t f(u)g(t-u)du,\]</span> compute <span class="math display">\[\mathcal L\{f*g\}=\int_0^\infty e^{-st}\int_0^t f(u)g(t-u)dudt.\]</span> Interchange the order of integration over <span class="math inline">\(0\le u\le t&lt;\infty\)</span>, and put <span class="math inline">\(v=t-u\)</span>: <span class="math display">\[\begin{aligned}
+\mathcal L\{f*g\}
+&amp;=\int_0^\infty f(u)e^{-su}\left[\int_0^\infty e^{-sv}g(v)dv\right]du\\
+&amp;=F(s)G(s).
+\end{aligned}\]</span> Therefore <span class="math display">\[\mathcal L^{-1}\{F(s)G(s)\}=\int_0^t f(u)g(t-u)du.\]</span></p>
+</div>
+<div class="formulaBox">
+<p>For an IVP:</p>
+<ol>
+<li><p>Set <span class="math inline">\(Y(s)=\mathcal L\{y(t)\}\)</span>.</p></li>
+<li><p>Transform each derivative and insert initial conditions immediately.</p></li>
+<li><p>Collect <span class="math inline">\(Y(s)\)</span> and solve algebraically.</p></li>
+<li><p>Invert with partial fractions / shifts / convolution.</p></li>
+<li><p>Check the initial conditions in the final answer.</p></li>
+</ol>
+</div>
+<div class="formulaBox">
+<p>Using the sign convention of the uploaded beam compilation, <span class="math display">\[EI\,y^{(4)}(x)=w(x).\]</span> Boundary conditions:</p>
+<div class="center">
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">End type</th>
+<th style="text-align: left;">Conditions</th>
+<th style="text-align: left;">Physical meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Clamped / embedded</td>
+<td style="text-align: left;"><span class="math inline">\(y=0,\ y'=0\)</span></td>
+<td style="text-align: left;">no deflection, no slope</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Simply supported / hinged</td>
+<td style="text-align: left;"><span class="math inline">\(y=0,\ y''=0\)</span></td>
+<td style="text-align: left;">no deflection, no bending moment</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Free</td>
+<td style="text-align: left;"><span class="math inline">\(y''=0,\ y'''=0\)</span></td>
+<td style="text-align: left;">no moment, no shear</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="memoryBox">
+<p>Clamp locks deflection and slope. A hinge locks deflection but allows rotation, so <span class="math inline">\(y''=0\)</span>. A free end has zero bending moment and zero shear, so <span class="math inline">\(y''=y'''=0\)</span>.</p>
+</div>
+<div class="formulaBox">
+<p>If a UDL <span class="math inline">\(w_0\)</span> acts only on <span class="math inline">\(0&lt;x&lt;a\)</span>, <span class="math display">\[w(x)=w_0[1-u(x-a)].\]</span> For a simply supported beam of length <span class="math inline">\(L\)</span> carrying constant <span class="math inline">\(w_0\)</span> and satisfying <span class="math inline">\(EIy^{(4)}=w_0\)</span>, <span class="math display">\[y(x)=\frac{w_0}{24EI}\left(x^4-2Lx^3+L^3x\right).\]</span> If downward load is defined negative in a different sign convention, the overall sign reverses.</p>
+</div>
+<h2 id="set-b7---vector-differential-calculus">Set B7 - Vector Differential Calculus</h2>
+<p><span style="color: Red"><strong>VERY HIGH PRIORITY</strong></span></p>
+<div class="formulaBox">
+<p>For <span class="math inline">\(F=Pi+Qj+Rk\)</span>, <span class="math display">\[\nabla=i\partial_x+j\partial_y+k\partial_z.\]</span> <span class="math display">\[\nabla\phi=(\phi_x,\phi_y,\phi_z),\qquad
+\nabla\cdot F=P_x+Q_y+R_z,\]</span> <span class="math display">\[\nabla\times F=
+\begin{vmatrix}
+i&amp;j&amp;k\\
+\partial_x&amp;\partial_y&amp;\partial_z\\
+P&amp;Q&amp;R
+\end{vmatrix},\qquad
+\nabla^2\phi=\phi_{xx}+\phi_{yy}+\phi_{zz}.\]</span></p>
+</div>
+<div class="theoryBox">
+<p><strong>Gradient:</strong> points in the direction of greatest increase of a scalar field; its magnitude is the maximum directional rate. It is normal to a level surface <span class="math inline">\(\phi=C\)</span>.</p>
+<p><strong>Divergence:</strong> measures net outward flux per unit volume; positive means source-like, negative sink-like, zero means solenoidal.</p>
+<p><strong>Curl:</strong> measures local rotational tendency; zero curl means irrotational.</p>
+</div>
+<div class="formulaBox">
+<p>For direction <span class="math inline">\(d\)</span>, first normalize: <span class="math display">\[\hat u=\frac d{|d|}.\]</span> Then <span class="math display">\[D_{\hat u}\phi=\nabla\phi\cdot\hat u,
+\qquad
+\max_{|\hat u|=1}D_{\hat u}\phi=|\nabla\phi|,\]</span> and the maximizing direction is <span class="math inline">\(\nabla\phi/|\nabla\phi|\)</span> when <span class="math inline">\(\nabla\phi\ne0\)</span>.</p>
+</div>
+<div class="proofBox">
+<p>For any unit vector <span class="math inline">\(\hat u\)</span>, <span class="math display">\[D_{\hat u}\phi=\nabla\phi\cdot\hat u.\]</span> By Cauchy-Schwarz, <span class="math display">\[\nabla\phi\cdot\hat u\le |\nabla\phi|\,|\hat u|=|\nabla\phi|.\]</span> Equality holds when <span class="math inline">\(\hat u\)</span> is parallel to <span class="math inline">\(\nabla\phi\)</span>. Therefore the maximum directional derivative is <span class="math inline">\(|\nabla\phi|\)</span> in the gradient direction.</p>
+</div>
+<div class="formulaBox">
+<p>For a level surface <span class="math inline">\(F(x,y,z)=0\)</span> at <span class="math inline">\(P=(x_0,y_0,z_0)\)</span>, <span class="math display">\[\nabla F(P)\cdot[(x,y,z)-P]=0\]</span> is the tangent plane. A normal line is <span class="math display">\[\frac{x-x_0}{F_x(P)}=\frac{y-y_0}{F_y(P)}=\frac{z-z_0}{F_z(P)}\]</span> when the denominators are nonzero.</p>
+</div>
+<div class="proofBox">
+<p>Along any differentiable curve <span class="math inline">\(r(t)\)</span> lying on <span class="math inline">\(F(x,y,z)=C\)</span>, <span class="math display">\[F(r(t))=C.\]</span> Differentiate: <span class="math display">\[\nabla F(r(t))\cdot r'(t)=0.\]</span> Thus <span class="math inline">\(\nabla F\)</span> is perpendicular to every tangent direction <span class="math inline">\(r'(t)\)</span> on the surface, so it is a normal vector.</p>
+</div>
+<div class="formulaBox">
+<p>At a common point of <span class="math inline">\(F=0\)</span> and <span class="math inline">\(G=0\)</span>, <span class="math display">\[\cos\theta=\frac{|\nabla F\cdot\nabla G|}{|\nabla F|\,|\nabla G|}.\]</span> The surfaces are orthogonal iff <span class="math inline">\(\nabla F\cdot\nabla G=0\)</span>.</p>
+</div>
+<div class="formulaBox">
+<p><span class="math display">\[\text{solenoidal}\iff\nabla\cdot F=0,
+\qquad
+\text{irrotational}\iff\nabla\times F=0,\]</span> <span class="math display">\[\text{conservative}\iff F=\nabla\phi.\]</span> On a simply connected domain (with suitable smoothness), <span class="math inline">\(\nabla\times F=0\)</span> implies <span class="math inline">\(F\)</span> is conservative.</p>
+</div>
+<div class="formulaBox">
+<p><span class="math display">\[\begin{aligned}
+\nabla(fg)&amp;=f\nabla g+g\nabla f,\\
+\nabla\cdot(fA)&amp;=\nabla f\cdot A+f(\nabla\cdot A),\\
+\nabla\times(fA)&amp;=\nabla f\times A+f(\nabla\times A),\\
+\nabla\times(\nabla\phi)&amp;=0,\\
+\nabla\cdot(\nabla\times A)&amp;=0,\\
+\nabla\cdot(\nabla\phi)&amp;=\nabla^2\phi.
+\end{aligned}\]</span></p>
+</div>
+<h2 id="set-b8---vector-integration-line-surface-volume">Set B8 - Vector Integration: Line, Surface &amp; Volume</h2>
+<p><span style="color: Red"><strong>VERY HIGH PRIORITY / GEOMETRY FIRST</strong></span></p>
+<div class="formulaBox">
+<p><span class="math display">\[\begin{aligned}
+\text{work / circulation: }&amp;\int_C F\cdot dr,\\
+\text{scalar line integral: }&amp;\int_C f\,ds,\\
+\text{surface flux: }&amp;\iint_S F\cdot n\,dS,\\
+\text{volume total: }&amp;\iiint_V f\,dV.
+\end{aligned}\]</span></p>
+</div>
+<div class="formulaBox">
+<p>If <span class="math inline">\(r=r(t)\)</span>, <span class="math inline">\(a\le t\le b\)</span>, <span class="math display">\[\int_C F\cdot dr=\int_a^b F(r(t))\cdot r'(t)\,dt.\]</span> Orientation is built into the parameter direction. Reverse the direction and the line integral changes sign.</p>
+</div>
+<div class="theoryBox">
+<p>For a positively oriented (counter-clockwise) simple closed curve <span class="math inline">\(C\)</span> bounding <span class="math inline">\(R\)</span>, <span class="math display">\[\oint_C P\,dx+Q\,dy=\iint_R\left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right)dA.\]</span> Clockwise orientation reverses the sign.</p>
+</div>
+<div class="formulaBox">
+<p>For <span class="math inline">\(z=g(x,y)\)</span> with upward orientation, <span class="math display">\[n\,dS=(-g_x,-g_y,1)\,dxdy.\]</span> For <span class="math inline">\(x=g(y,z)\)</span> with <span class="math inline">\(+x\)</span> orientation, <span class="math display">\[n\,dS=(1,-g_y,-g_z)\,dydz.\]</span> For an implicit surface <span class="math inline">\(G(x,y,z)=0\)</span>, the normal direction is <span class="math inline">\(\nabla G\)</span>; choose the sign to match the required orientation.</p>
+</div>
+<div class="theoryBox">
+<p>If <span class="math inline">\(C=\partial S\)</span> and the orientations follow the right-hand rule, <span class="math display">\[\oint_C F\cdot dr=\iint_S(\nabla\times F)\cdot n\,dS.\]</span> Use it when a line integral around the boundary of a surface is easier to replace by a surface integral of curl, or vice versa.</p>
+</div>
+<div class="theoryBox">
+<p>For a closed surface <span class="math inline">\(\partial V\)</span> with outward normal, <span class="math display">\[\iint_{\partial V}F\cdot n\,dS=\iiint_V(\nabla\cdot F)\,dV.\]</span> Use it when a closed-surface flux is easier to replace by one volume integral of divergence.</p>
+</div>
+<div class="memoryBox">
+<p><strong>Green</strong> = flat closed boundary in the plane. <strong>Stokes</strong> = boundary curve of a surface. <strong>Gauss</strong> = closed surface enclosing a volume.</p>
+</div>
+<div class="formulaBox">
+<p><strong>Cartesian:</strong> <span class="math inline">\(dV=dx\,dy\,dz\)</span>.</p>
+<p><strong>Cylindrical:</strong> <span class="math display">\[x=r\cos\theta,\quad y=r\sin\theta,\quad z=z,\qquad dV=r\,dr\,d\theta\,dz.\]</span></p>
+<p><strong>Spherical:</strong> <span class="math display">\[x=\rho\sin\phi\cos\theta,\quad y=\rho\sin\phi\sin\theta,\quad z=\rho\cos\phi,\]</span> <span class="math display">\[dV=\rho^2\sin\phi\,d\rho\,d\phi\,d\theta.\]</span></p>
+</div>
+<h1 id="theory-question-bank---what-you-should-be-able-to-write">Theory Question Bank - What You Should Be Able to Write</h1>
+<h2 id="section-a-theory-checklist">Section A theory checklist</h2>
+<ol>
+<li><p>Define with example: equivalent, singular, nonsingular, trace, symmetric, skew-symmetric, scalar, diagonal, lower/upper triangular, Hermitian, orthogonal, idempotent, involutory, nilpotent, elementary, principal submatrix.</p></li>
+<li><p>Explain the difference between symmetric and skew-symmetric matrices.</p></li>
+<li><p>State the symmetric + skew-symmetric decomposition formula.</p></li>
+<li><p>Define rank; explain how rank is obtained from echelon form.</p></li>
+<li><p>Define consistent/inconsistent systems; state the rank criteria for no/unique/infinite solutions.</p></li>
+<li><p>Define trivial and nontrivial solutions of a homogeneous system.</p></li>
+<li><p>Define linear independence and dependence.</p></li>
+<li><p>Define REF, RREF / row canonical form, and normal form.</p></li>
+<li><p>Define eigenvalue and eigenvector; list core eigen properties.</p></li>
+<li><p>State the condition for diagonalizability.</p></li>
+<li><p>Define velocity, acceleration, unit tangent, principal normal, binormal, curvature and torsion.</p></li>
+<li><p>Explain normal, osculating and rectifying planes.</p></li>
+<li><p>Define work done by a force field.</p></li>
+<li><p>State the Cayley-Hamilton theorem and its uses.</p></li>
+</ol>
+<h2 id="section-b-theory-checklist">Section B theory checklist</h2>
+<ol>
+<li><p>Define integral transform and identify the kernel of the Laplace transform.</p></li>
+<li><p>Define the Laplace transform and state sufficient conditions for existence.</p></li>
+<li><p>Define the unit step / Heaviside function.</p></li>
+<li><p>State first and second shifting theorems.</p></li>
+<li><p>State the periodic-function Laplace formula.</p></li>
+<li><p>State the multiplication-by-<span class="math inline">\(t\)</span>, derivative, integral and division-by-<span class="math inline">\(t\)</span> properties.</p></li>
+<li><p>Define inverse Laplace transform and convolution.</p></li>
+<li><p>State the convolution theorem.</p></li>
+<li><p>Explain the Laplace workflow for an IVP.</p></li>
+<li><p>State the beam equation used in the notes and the clamped/hinged/free boundary conditions.</p></li>
+<li><p>Define gradient, divergence, curl, Laplacian and directional derivative.</p></li>
+<li><p>Explain the physical meaning of gradient and divergence; explain curl as local rotation.</p></li>
+<li><p>Define solenoidal, irrotational and conservative fields.</p></li>
+<li><p>State the angle formula for two surfaces and the tangent-plane formula.</p></li>
+<li><p>Define line, surface and volume integrals.</p></li>
+<li><p>State Green’s, Stokes’ and Gauss’ theorems, including orientation requirements.</p></li>
+</ol>
+<h1 id="proof-derivation-priority-bank">Proof / Derivation Priority Bank</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Rank</strong></th>
+<th style="text-align: left;">Proof / derivation</th>
+<th style="text-align: left;">Exam value</th>
+<th style="text-align: left;">One-line memory route</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>1</strong></td>
+<td style="text-align: left;"><span class="math inline">\(A=\frac12(A+A^T)+\frac12(A-A^T)\)</span> and uniqueness</td>
+<td style="text-align: left;">Very High</td>
+<td style="text-align: left;">transpose; then add/subtract</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>2</strong></td>
+<td style="text-align: left;">Diagonal of skew-symmetric matrix is zero</td>
+<td style="text-align: left;">Very High</td>
+<td style="text-align: left;"><span class="math inline">\(a_{ii}=-a_{ii}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>3</strong></td>
+<td style="text-align: left;">Symmetric nonsingular <span class="math inline">\(A\Rightarrow A^{-1}\)</span> symmetric</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;"><span class="math inline">\((A^{-1})^T=(A^T)^{-1}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>4</strong></td>
+<td style="text-align: left;">Involutory <span class="math inline">\(A\Rightarrow\frac12(I\pm A)\)</span> idempotent</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">expand square, use <span class="math inline">\(A^2=I\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>5</strong></td>
+<td style="text-align: left;">Direction-cosine matrix is orthogonal</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">rows are orthonormal</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>6</strong></td>
+<td style="text-align: left;">Vector triple product + Jacobi identity</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">component identity, cyclic sum</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>7</strong></td>
+<td style="text-align: left;">Laplace linearity</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">distribute integral</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>8</strong></td>
+<td style="text-align: left;">First shift</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">combine exponentials</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>9</strong></td>
+<td style="text-align: left;"><span class="math inline">\(\mathcal L\{f'\}=sF-f(0)\)</span></td>
+<td style="text-align: left;">Very High</td>
+<td style="text-align: left;">integration by parts</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>10</strong></td>
+<td style="text-align: left;">Integral property <span class="math inline">\(F(s)/s\)</span></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">set <span class="math inline">\(g=\int_0^t f\)</span> and transform <span class="math inline">\(g'\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>11</strong></td>
+<td style="text-align: left;">Multiplication by <span class="math inline">\(t\)</span></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">differentiate <span class="math inline">\(F(s)\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>12</strong></td>
+<td style="text-align: left;">Division by <span class="math inline">\(t\)</span></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">let <span class="math inline">\(g=f/t\)</span>, then integrate <span class="math inline">\(G'=-F\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>13</strong></td>
+<td style="text-align: left;">Periodic transform</td>
+<td style="text-align: left;">Very High</td>
+<td style="text-align: left;">split into periods + geometric series</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>14</strong></td>
+<td style="text-align: left;">Convolution theorem</td>
+<td style="text-align: left;">Very High</td>
+<td style="text-align: left;">double integral + change order</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>15</strong></td>
+<td style="text-align: left;"><span class="math inline">\(\mathcal L\{\cos at/t\}\)</span> does not exist</td>
+<td style="text-align: left;">Repeated</td>
+<td style="text-align: left;">near <span class="math inline">\(0\)</span>, integrand <span class="math inline">\(\sim1/t\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>16</strong></td>
+<td style="text-align: left;"><span class="math inline">\(\int_0^\infty\sin^2t/t^2\,dt=\pi/2\)</span></td>
+<td style="text-align: left;">Repeated</td>
+<td style="text-align: left;">Dirichlet integral via Laplace</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>17</strong></td>
+<td style="text-align: left;">Maximum directional derivative</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Cauchy-Schwarz</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>18</strong></td>
+<td style="text-align: left;">Gradient normal to a level surface</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">differentiate <span class="math inline">\(F(r(t))=C\)</span></td>
+</tr>
+</tbody>
+</table></div>
+<div class="warnBox">
+<p>The uploaded theory compilation’s vector-triple-product item states the triple-product identity and then uses it to establish the cyclic/Jacobi identity. This handbook expands that item with a standard component derivation so that the proof is complete rather than circular.</p>
+</div>
+<h1 id="last-minute-error-shield">Last-Minute Error Shield</h1>
+<ul>
+<li><p><strong>Matrix:</strong> equivalent and row-equivalent are not identical ideas; full equivalence may use both row and column operations.</p></li>
+<li><p><strong>Normal form:</strong> RREF and the equivalence normal form <span class="math inline">\([I_r\ 0;0\ 0]\)</span> are different objects.</p></li>
+<li><p><strong>Eigen:</strong> <span class="math inline">\(x=0\)</span> is never an eigenvector; keep the column order of <span class="math inline">\(P\)</span> matched to the diagonal order of <span class="math inline">\(D\)</span>.</p></li>
+<li><p><strong>Consistency:</strong> compare <span class="math inline">\(\operatorname{rank}(A)\)</span> with <span class="math inline">\(\operatorname{rank}([A\mid b])\)</span> before deciding unique/infinite.</p></li>
+<li><p><strong>Laplace shift:</strong> <span class="math inline">\(F(s-a)\leftrightarrow e^{at}f(t)\)</span>; <span class="math inline">\(F(s+a)\leftrightarrow e^{-at}f(t)\)</span>.</p></li>
+<li><p><strong>Second shift:</strong> an <span class="math inline">\(e^{-as}\)</span> factor must produce a delay and a unit-step factor in the inverse.</p></li>
+<li><p><strong>Convolution:</strong> use <span class="math inline">\(f(u)g(t-u)\)</span> with <span class="math inline">\(0\le u\le t\)</span>.</p></li>
+<li><p><strong>Beam:</strong> write the four boundary conditions before long algebra.</p></li>
+<li><p><strong>Directional derivative:</strong> normalize the direction vector first.</p></li>
+<li><p><strong>Surface flux:</strong> do not multiply by <span class="math inline">\(dS\)</span> twice when using the vector area element <span class="math inline">\(n\,dS\)</span> directly.</p></li>
+<li><p><strong>Green/Stokes/Gauss:</strong> check orientation and whether the curve/surface is actually closed.</p></li>
+<li><p><strong>Jacobians:</strong> cylindrical contributes <span class="math inline">\(r\)</span>; spherical contributes <span class="math inline">\(\rho^2\sin\phi\)</span>.</p></li>
+</ul>
+<h1 id="two-page-final-revision-sheet">Two-Page Final Revision Sheet</h1>
+<h2 id="section-a---formulas-to-reproduce-from-memory">Section A - formulas to reproduce from memory</h2>
+<div class="formulaBox">
+<p><span class="math display">\[\begin{aligned}
+&amp;A^T=A,\quad A^T=-A,\quad A^TA=I,\quad A^2=A,\quad A^2=I,\quad A^k=0,\\
+&amp;A=\tfrac12(A+A^T)+\tfrac12(A-A^T),\\
+&amp;\det A\ne0\iff \operatorname{rank}A=n\iff A^{-1}\text{ exists},\\
+&amp;r(A)\ne r([A|b])\Rightarrow\text{no solution},\\
+&amp;r(A)=r([A|b])=n\Rightarrow\text{unique},\quad r(A)=r([A|b])&lt;n\Rightarrow\text{infinite},\\
+&amp;PAQ=\begin{bmatrix}I_r&amp;0\\0&amp;0\end{bmatrix},\\
+&amp;\det(A-\lambda I)=0,\quad (A-\lambda I)x=0,\quad A=PDP^{-1},\\
+&amp;r'=v,\quad r''=a,\quad T=\frac{r'}{|r'|},\quad B=\frac{r'\times r''}{|r'\times r''|},\quad N=B\times T,\\
+&amp;\kappa=\frac{|r'\times r''|}{|r'|^3},\quad \tau=\frac{(r'\times r'')\cdot r'''}{|r'\times r''|^2},\\
+&amp;W=\int_C F\cdot dr,\qquad p(\lambda)=\det(\lambda I-A)\Rightarrow p(A)=0.
+\end{aligned}\]</span></p>
+</div>
+<h2 id="section-b---formulas-to-reproduce-from-memory">Section B - formulas to reproduce from memory</h2>
+<div class="formulaBox">
+<p><span class="math display">\[\begin{aligned}
+&amp;\mathcal L\{f\}=\int_0^\infty e^{-st}f(t)dt,\\
+&amp;1\leftrightarrow 1/s,\quad t^n\leftrightarrow n!/s^{n+1},\quad e^{at}\leftrightarrow 1/(s-a),\\
+&amp;\sin at\leftrightarrow a/(s^2+a^2),\quad \cos at\leftrightarrow s/(s^2+a^2),\\
+&amp;\mathcal L\{e^{at}f\}=F(s-a),\quad \mathcal L\{t^nf\}=(-1)^nF^{(n)}(s),\\
+&amp;\mathcal L\{f'\}=sF-f(0),\quad \mathcal L\{f''\}=s^2F-sf(0)-f'(0),\\
+&amp;\mathcal L\left\{\int_0^t f\right\}=F/s,\quad \mathcal L\{f/t\}=\int_s^\infty F(u)du,\\
+&amp;\mathcal L\{f(t-a)u(t-a)\}=e^{-as}F(s),\\
+&amp;f(t+T)=f(t)\Rightarrow \mathcal L\{f\}=\frac{\int_0^T e^{-st}f(t)dt}{1-e^{-sT}},\\
+&amp;\mathcal L^{-1}\{FG\}=\int_0^t f(u)g(t-u)du,\\
+&amp;EIy^{(4)}=w(x),\\
+&amp;\nabla\phi=(\phi_x,\phi_y,\phi_z),\quad \nabla\cdot F=P_x+Q_y+R_z,\\
+&amp;D_{\hat u}\phi=\nabla\phi\cdot\hat u,\quad \max D=|\nabla\phi|,\\
+&amp;\oint_C Pdx+Qdy=\iint_R(Q_x-P_y)dA,\\
+&amp;\oint_C F\cdot dr=\iint_S(\nabla\times F)\cdot n\,dS,\\
+&amp;\iint_{\partial V}F\cdot n\,dS=\iiint_V\nabla\cdot F\,dV,\\
+&amp;dV_{\rm cyl}=r\,dr\,d\theta\,dz,\qquad dV_{\rm sph}=\rho^2\sin\phi\,d\rho\,d\phi\,d\theta.
+\end{aligned}\]</span></p>
+</div>
+<h1 class="unnumbered" id="source-basis-and-60-minute-revision-route">Source Basis and 60-Minute Revision Route</h1>
+<div class="theoryBox">
+<p>This handbook was prepared from the uploaded Math 2123 material. The main source groups are:</p>
+<ul>
+<li><p>KUET Math 2123 term-final question collection covering 2015-2025;</p></li>
+<li><p>Matrix lecture PDFs covering matrix types, echelon/canonical/normal forms, consistency, inverse by elementary transformation, and eigenvalue/eigenvector;</p></li>
+<li><p>Laplace lecture PDFs and the uploaded Laplace question collection;</p></li>
+<li><p>Vector lecture notes and the complete vector-integration question compilation;</p></li>
+<li><p>The complete theory/proof compilation, unit-step guide, and beam-deflection/UDL compilation;</p></li>
+<li><p>Uploaded reference books including H.K. Dass, Schaum outlines, Shanti Narayan, and David C. Lay.</p></li>
+</ul>
+<p>Historical year tags are used as exam-priority cues; topics are organized using the A1-A4 and B5-B8 preparation map.</p>
+</div>
+<div class="memoryBox">
+<ol>
+<li><p>0-10 min: reproduce the two-page final formula sheet without looking.</p></li>
+<li><p>10-25 min: rehearse Proofs 1-5 (matrix block).</p></li>
+<li><p>25-45 min: rehearse Laplace derivations - derivative, multiplication by <span class="math inline">\(t\)</span>, periodic formula, convolution, and the two repeated existence/integral proofs.</p></li>
+<li><p>45-55 min: revise gradient/divergence/curl, tangent plane, theorem selector, and beam boundary conditions.</p></li>
+<li><p>55-60 min: read the Last-Minute Error Shield only.</p></li>
+</ol>
+</div>
+<div class="warnBox">
+<p>For a proof question, begin with the exact theorem/definition being used, show the key algebraic or integral step, and end with a clear concluding line. For a formula question, write the condition of validity whenever it matters (for example, simple roots in Heaviside expansion, periodicity <span class="math inline">\(f(t+T)=f(t)\)</span>, or convergence for division by <span class="math inline">\(t\)</span>).</p>
+</div>
+<div class="center">
+<p><span> <strong>Made by K.I.Rohan</strong></span></p>
+<p><span> Formula, Theory + Proof/Derivation Handbook | Math 2123</span></p>
+</div>
+</article></div></main>
+<footer class="site-footer"><div><b>Math 2123: Mathematics-III</b><span>Complete KUET-oriented study guide</span></div><div class="footer-credit">Made by <strong>K.I.Rohan</strong></div></footer>
+<div class="search-modal" data-search-modal hidden><div class="search-panel"><div class="search-head"><input data-search-input placeholder="Search sets, formulas, questions…" autocomplete="off"><button class="icon-btn" data-search-close>✕</button></div><div class="search-hint">Press <kbd>Ctrl</kbd> + <kbd>K</kbd> anywhere to search.</div><div data-search-results class="search-results"></div></div></div>
+<button class="to-top" data-to-top aria-label="Back to top">↑</button>
+</body></html>

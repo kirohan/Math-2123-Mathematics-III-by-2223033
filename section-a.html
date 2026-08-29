@@ -1,0 +1,2031 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Class Note · Section A · Math 2123</title>
+<meta name="description" content="Detailed Section A Math 2123 class notes.">
+<meta name="theme-color" content="#0b3b66">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\(','\)']] },svg:{fontCache:'global'}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<script defer src="assets/js/app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-mark">M³</span><span><b>Math 2123</b><small>Mathematics-III Guide</small></span></a>
+  <nav class="desktop-nav"><a class="nav-link " href="index.html">Home</a><a class="nav-link active" href="section-a.html">Class Note A</a><a class="nav-link " href="section-b.html">Class Note B</a><a class="nav-link " href="question-bank-analysis.html">Question Bank Analysis</a><a class="nav-link " href="question-bank-solution.html">Question Bank Solution</a><a class="nav-link " href="backlog-preparation.html">Backlog Preparation</a><a class="nav-link " href="formula-proof-vault.html">Formula + Proof Vault</a></nav>
+  <div class="header-actions"><button class="icon-btn" data-search-open aria-label="Search">⌕</button><button class="icon-btn" data-theme-toggle aria-label="Toggle theme">◐</button><button class="icon-btn mobile-only" data-menu-toggle aria-label="Menu">☰</button></div>
+</header>
+<div class="mobile-menu" data-mobile-menu><div class="mobile-menu-inner"><a class="nav-link " href="index.html">Home</a><a class="nav-link active" href="section-a.html">Class Note A</a><a class="nav-link " href="section-b.html">Class Note B</a><a class="nav-link " href="question-bank-analysis.html">Question Bank Analysis</a><a class="nav-link " href="question-bank-solution.html">Question Bank Solution</a><a class="nav-link " href="backlog-preparation.html">Backlog Preparation</a><a class="nav-link " href="formula-proof-vault.html">Formula + Proof Vault</a></div></div>
+<main id="main"><section class="page-hero compact"><div class="hero-copy"><span class="eyebrow">SECTION A</span><h1>Class Note · Section A</h1><p>Sets A1–A4: Matrix fundamentals, systems, eigen analysis, vector kinematics and Cayley-Hamilton.</p><div class="hero-actions"><a class="btn primary" href="section-b.html">Continue to Section B</a><a class="btn ghost" href="resources/section-a-class-note.pdf">PDF archive</a><button class="btn ghost" onclick="window.print()">Print page</button></div></div><div class="hero-chip">3 of 4 sets<br><strong>per section</strong></div></section>
+<div class="reading-layout"><aside class="toc-panel"><div class="toc-title">On this page</div><nav data-auto-toc></nav><div class="toc-tip">Your progress is saved on this device.</div></aside><article class="document-content"><p><strong>KUET MATHEMATICS - III</strong></p>
+<p><strong>SECTION A CLASS NOTE</strong></p>
+<p>Math 2123 | Exam-oriented, source-grounded study edition</p>
+<p><img src="assets/media/section-a/media/image1.png" style="width:5.8in;height:1.9019in"/></p>
+<p><em>Core memory ladder used throughout Set A1.</em></p>
+<p><strong>Matrix • Linear Systems • Eigen Analysis • Vector Kinematics • Work • Cayley-Hamilton</strong></p>
+<p><strong>Credit: Made by K.I.Rohan</strong></p>
+<p>Prepared from the uploaded class notes, reference books, and the 2015-2025 Math 2123 question bank.</p>
+<h3 id="how-to-use-this-note">How to use this note</h3>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Exam strategy</strong> Section A has 4 sets in this analysis framework, but you answer 3. Sets A1-A3 are the safest core because they repeat most consistently. Set A4 is the flexible backup; however, its kinematics/work questions are often scoring when practiced.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Set</strong></th>
+<th><strong>Main block</strong></th>
+<th><strong>Best use</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A1</td>
+<td>Matrix fundamentals + short proofs</td>
+<td>High-return theory + 10-15 mark matrix tasks</td>
+</tr>
+<tr class="even">
+<td>A2</td>
+<td>Inverse + rank + consistency + dependence</td>
+<td>Algorithmic, predictable, very exam-friendly</td>
+</tr>
+<tr class="odd">
+<td>A3</td>
+<td>Forms + eigenvalue/eigenvector + diagonalization</td>
+<td>Long but structured; usually high marks</td>
+</tr>
+<tr class="even">
+<td>A4</td>
+<td>Vector kinematics + work + Cayley-Hamilton</td>
+<td>Backup set; formula-driven and scoring</td>
+</tr>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>বাংলা ব্যাখ্যার নিয়ম</strong> কঠিন ইংরেজি term-এর পাশে ছোট বাংলা অর্থ দেওয়া হয়েছে। কিন্তু formula, theorem name, matrix notation ইংরেজিতেই রাখা হয়েছে—যাতে exam script-এর language-এর সাথে মিল থাকে।</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Source note</strong> Historical papers sometimes moved the same topic between Section A and Section B. This class note follows the A1-A4 topic map from the Question Bank Analysis, while the “Matching Question” tables tag the historical appearances regardless of old section placement.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<h3 id="fast-navigation">Fast navigation</h3>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Set</strong></th>
+<th><strong>What you must master</strong></th>
+<th><strong>Memory hook</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A1</td>
+<td>Types, transpose, decomposition, orthogonal, idempotent/involutory/nilpotent</td>
+<td>Mirror / sign / power</td>
+</tr>
+<tr class="even">
+<td>A2</td>
+<td>ERO inverse, rank, consistency, homogeneous systems, dependence</td>
+<td>D-R-I + R-R-n</td>
+</tr>
+<tr class="odd">
+<td>A3</td>
+<td>REF/RREF/normal, eigen, diagonalization</td>
+<td>Pivot path + D-S-V</td>
+</tr>
+<tr class="even">
+<td>A4</td>
+<td>v-a, TNB, curvature/torsion, work, CH</td>
+<td>v-&gt;T-&gt;N-&gt;B + p(λ)-&gt;p(A)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>VERY HIGH PRIORITY</strong></p>
+<h2 id="set-a1-matrix-fundamentals-core-theorems">SET A1 — Matrix Fundamentals &amp; Core Theorems</h2>
+<p>এই set-এ short definition, “define with example”, ছোট proof, matrix classification এবং decomposition খুব বেশি আসে। লক্ষ্য: condition দেখে 3-5 সেকেন্ডে matrix type চিনতে পারা।</p>
+<h3 id="1-matrix-type-master-table">1. Matrix type master table</h3>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Type</strong></th>
+<th><strong>Test / condition</strong></th>
+<th><strong>বাংলা cue</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Square</td>
+<td>m=n</td>
+<td>সারি = কলাম</td>
+</tr>
+<tr class="even">
+<td>Diagonal</td>
+<td>a_ij=0 for i≠j</td>
+<td>মূল কর্ণ ছাড়া সব 0</td>
+</tr>
+<tr class="odd">
+<td>Scalar</td>
+<td>Diagonal + all diagonal entries equal</td>
+<td>একই scalar বারবার</td>
+</tr>
+<tr class="even">
+<td>Identity</td>
+<td>Scalar with diagonal 1</td>
+<td>1 on diagonal</td>
+</tr>
+<tr class="odd">
+<td>Upper triangular</td>
+<td>a_ij=0 for i&gt;j</td>
+<td>কর্ণের নিচে 0</td>
+</tr>
+<tr class="even">
+<td>Lower triangular</td>
+<td>a_ij=0 for i&lt;j</td>
+<td>কর্ণের উপরে 0</td>
+</tr>
+<tr class="odd">
+<td>Symmetric</td>
+<td>A^T=A</td>
+<td>mirror করলে একই</td>
+</tr>
+<tr class="even">
+<td>Skew-symmetric</td>
+<td>A^T=−A</td>
+<td>mirror করলে sign বদলায়; diagonal 0</td>
+</tr>
+<tr class="odd">
+<td>Orthogonal</td>
+<td>A^TA=AA^T=I</td>
+<td>transpose = inverse</td>
+</tr>
+<tr class="even">
+<td>Singular</td>
+<td>det(A)=0</td>
+<td>inverse নেই</td>
+</tr>
+<tr class="odd">
+<td>Non-singular</td>
+<td>det(A)≠0</td>
+<td>inverse আছে</td>
+</tr>
+<tr class="even">
+<td>Idempotent</td>
+<td>A²=A</td>
+<td>দুইবার করলেও একই</td>
+</tr>
+<tr class="odd">
+<td>Involutory</td>
+<td>A²=I</td>
+<td>নিজেই নিজের inverse</td>
+</tr>
+<tr class="even">
+<td>Nilpotent</td>
+<td>A^k=0 for some k≥1</td>
+<td>কিছু power-এ zero</td>
+</tr>
+<tr class="odd">
+<td>Hermitian</td>
+<td>A†=A</td>
+<td>complex symmetric-এর analogue</td>
+</tr>
+<tr class="even">
+<td>Skew-Hermitian</td>
+<td>A†=−A</td>
+<td>complex skew analogue</td>
+</tr>
+<tr class="odd">
+<td>Elementary</td>
+<td>I-এর উপর one elementary operation</td>
+<td>one-operation matrix</td>
+</tr>
+<tr class="even">
+<td>Equivalent</td>
+<td>B=PAQ, P,Q non-singular</td>
+<td>row+column ops-এ পাওয়া</td>
+</tr>
+<tr class="odd">
+<td>Trace</td>
+<td>tr(A)=Σa_ii</td>
+<td>diagonal sum</td>
+</tr>
+<tr class="even">
+<td>Principal submatrix</td>
+<td>same indexed rows and columns retained</td>
+<td>একই row/column index set</td>
+</tr>
+</tbody>
+</table></div>
+<p><img src="assets/media/section-a/media/image1.png" style="width:6.1in;height:2.00027in"/></p>
+<p><em>Diagonal -&gt; Scalar -&gt; Identity: each step adds a stronger condition.</em></p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Shortcut — D-S-I</strong> Identity ⊂ Scalar ⊂ Diagonal. তাই “identity কি diagonal?” — হ্যাঁ। “diagonal কি scalar?” — সবসময় নয়।</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<h3 id="2-symmetric-vs-skew-symmetric-mirror-rule">2. Symmetric vs skew-symmetric — mirror rule</h3>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><p><strong>Symmetric: A^T = A | Skew-symmetric: A^T = -A</strong></p>
+<p>Skew-symmetric হলে a_ii = -a_ii ⇒ a_ii = 0</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>মনে রাখুন</strong> Main diagonal-কে আয়না ভাবুন। Symmetric-এ আয়নার দুই পাশে সংখ্যা একই; skew-symmetric-এ magnitude একই কিন্তু sign বিপরীত।</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p><strong>Theorem: every real square matrix splits into symmetric + skew-symmetric parts</strong></p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><p><strong>A = ½(A + A^T) + ½(A - A^T) = P + Q</strong></p>
+<p>P^T=P and Q^T=-Q</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p>Proof idea: transpose P এবং Q নিলেই যথাক্রমে P ও -Q পাওয়া যায়। Uniqueness-এর জন্য A=P+Q এবং A^T=P−Q যোগ/বিয়োগ করলে P=½(A+A^T), Q=½(A−A^T) বাধ্যতামূলক।</p>
+<p><strong>Worked example</strong></p>
+<p>Let A = [[1,3,-1],[0,2,4],[2,-1,5]]. Then:</p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>P = ½(A+A^T) = [[1, 3/2, 1/2],[3/2, 2, 3/2],[1/2, 3/2, 5]]</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Q = ½(A-A^T) = [[0, 3/2, -3/2],[-3/2, 0, 5/2],[3/2, -5/2, 0]]</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Check</strong> P+Q=A, P^T=P, Q^T=-Q. Exam-এ তিনটি check লিখলে solution সম্পূর্ণ ও convincing হয়।</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<h3 id="3-orthogonal-matrix">3. Orthogonal matrix</h3>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>A orthogonal ⇔ A^TA = I ⇔ AA^T = I ⇔ A⁻¹ = A^T</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p>Geometric meaning: orthogonal transformation length এবং angle preserve করে। তাই columns (এবং rows) unit এবং mutually orthogonal হয়।</p>
+<p><strong>Exam test example</strong></p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>B = (1/3)[[2,2,1],[-2,1,2],[1,-2,2]]</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p>Column dot-products: each column has squared length (4+4+1)/9=1; distinct columns have dot product 0. Hence B^TB=I, so B is orthogonal.</p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Shortcut</strong> 3×3 matrix-এ full multiplication না করেও columns-এর length 1 এবং pairwise dot product 0 দেখালে B^TB=I প্রমাণ হয়ে যায়।</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<h3 id="4-idempotent-involutory-nilpotent">4. Idempotent, involutory, nilpotent</h3>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Type</strong></th>
+<th><strong>Power test</strong></th>
+<th><strong>Immediate consequence / clue</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Idempotent</td>
+<td>A²=A</td>
+<td>Aⁿ=A for n≥1; eigenvalues 0 or 1</td>
+</tr>
+<tr class="even">
+<td>Involutory</td>
+<td>A²=I</td>
+<td>A⁻¹=A; eigenvalues ±1</td>
+</tr>
+<tr class="odd">
+<td>Nilpotent</td>
+<td>A^k=0</td>
+<td>all eigenvalues 0; smallest such k = index</td>
+</tr>
+</tbody>
+</table></div>
+<p>Nilpotent example: N=[[0,1],[0,0]], N²=0, so index = 2. Involutory example: S=[[0,1],[1,0]], S²=I.</p>
+<p><strong>Proof pattern: if A is involutory, show ½(I±A) are idempotent</strong></p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><p><strong>P = ½(I+A) ⇒ P² = ¼(I+2A+A²) = ½(I+A) = P</strong></p>
+<p>use A²=I; same for Q=½(I-A)</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Memory hook</strong> Idempotent = “নিজেকে square করেও unchanged”; Involutory = “square করলে identity”; Nilpotent = “power বাড়াতে বাড়াতে zero”.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<h3 id="5-hermitian-and-skew-hermitian">5. Hermitian and skew-Hermitian</h3>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>A† = (conjugate of A)^T | Hermitian: A†=A | Skew-Hermitian: A†=-A</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p>Real entries হলে conjugate বদলায় না, তাই real matrix-এর ক্ষেত্রে Hermitian becomes symmetric, এবং skew-Hermitian becomes skew-symmetric. Hermitian matrix-এর diagonal entries real; skew-Hermitian-এর diagonal entries purely imaginary or zero.</p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><p><strong>Complex decomposition: A = ½(A+A†) + ½(A-A†)</strong></p>
+<p>first part Hermitian, second part skew-Hermitian</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<h3 id="6-matrix-arithmetic-is-not-ordinary-real-number-arithmetic">6. Matrix arithmetic is not ordinary real-number arithmetic</h3>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Property that can fail</strong></th>
+<th><strong>Counterexample / reason</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>AB = BA</td>
+<td>Generally false: matrix multiplication is non-commutative.</td>
+</tr>
+<tr class="even">
+<td>AB=0 ⇒ A=0 or B=0</td>
+<td>False: nonzero matrices can be zero divisors.</td>
+</tr>
+<tr class="odd">
+<td>AB=AC ⇒ B=C</td>
+<td>False if A is singular; cancellation needs suitable invertibility.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Zero-divisor example: A=[[1,0],[0,0]], B=[[0,0],[1,0]] are both nonzero but AB=0. Cancellation failure: with A=[[1,0],[0,0]], B=I and C=[[1,0],[1,0]], AB=AC although B≠C.</p>
+<h3 id="7-proof-mini-bank-for-a1">7. Proof mini-bank for A1</h3>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Proof / derivation</strong></th>
+<th><strong>One-line route</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Diagonal entries of skew-symmetric are zero</td>
+<td>a_ii = -a_ii ⇒ 2a_ii=0</td>
+</tr>
+<tr class="even">
+<td>If A symmetric &amp; nonsingular, A⁻¹ symmetric</td>
+<td>(A⁻¹)^T=(A^T)⁻¹=A⁻¹</td>
+</tr>
+<tr class="odd">
+<td>A=P+Q symmetric + skew, uniquely</td>
+<td>P=½(A+A^T), Q=½(A-A^T)</td>
+</tr>
+<tr class="even">
+<td>Involutory ⇒ ½(I±A) idempotent</td>
+<td>expand square and use A²=I</td>
+</tr>
+<tr class="odd">
+<td>Direction-cosine matrix is orthogonal</td>
+<td>rows/columns are orthonormal ⇒ AA^T=I</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Matching questions from the question bank — A1</strong></p>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Year / Q</strong></th>
+<th><strong>Matching question family</strong></th>
+<th><strong>Priority</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2015 Q1</td>
+<td>Equivalent, singular, trace, symmetric; matrix arithmetic exceptions</td>
+<td>★★★</td>
+</tr>
+<tr class="even">
+<td>2016 Q1 / Q4</td>
+<td>Matrix/scalar/Hermitian/trace; Hermitian decomposition; symmetric inverse</td>
+<td>★★★</td>
+</tr>
+<tr class="odd">
+<td>2017 Q5</td>
+<td>Skew-symmetric, principal submatrix, elementary, diagonal; decomposition</td>
+<td>★★★</td>
+</tr>
+<tr class="even">
+<td>2018 Q1-Q4</td>
+<td>Orthogonal/Hermitian/idempotent/lower triangular; decomposition; skew diagonal zero; involutory proof</td>
+<td>★★★</td>
+</tr>
+<tr class="odd">
+<td>2019 Q1/Q3</td>
+<td>Orthogonal test; symmetric parameter problem</td>
+<td>★★</td>
+</tr>
+<tr class="even">
+<td>2021 Q4</td>
+<td>Skew-symmetric, singular, diagonal definitions</td>
+<td>★★</td>
+</tr>
+<tr class="odd">
+<td>2022 Q7</td>
+<td>Direction-cosine matrix -&gt; orthogonal proof</td>
+<td>★★</td>
+</tr>
+<tr class="even">
+<td>2023 Q5</td>
+<td>Skew-symmetric/diagonal/orthogonal + decomposition</td>
+<td>★★★</td>
+</tr>
+<tr class="odd">
+<td>2024 Q5</td>
+<td>Orthogonal/elementary/non-singular definitions</td>
+<td>★★★</td>
+</tr>
+<tr class="even">
+<td>2025 Q1</td>
+<td>Lower triangular/symmetric/nilpotent/idempotent; nilpotent index; decomposition</td>
+<td>★★★</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A1 rapid recall - 5 minute self-test</strong></p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Without looking</strong> (1) Write conditions for symmetric, skew-symmetric, orthogonal, idempotent, nilpotent. (2) Prove skew-symmetric diagonal = 0. (3) Write A=P+Q decomposition. (4) State three ways matrices differ from real-number arithmetic.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p><strong>VERY HIGH PRIORITY</strong></p>
+<h2 id="set-a2-inverse-rank-consistency-linear-dependence">SET A2 — Inverse, Rank, Consistency &amp; Linear Dependence</h2>
+<p>এই set-এর সবচেয়ে বড় advantage: নিয়ম ঠিক থাকলে answer প্রায় mechanical. ভুল কমানোর মূল কৌশল হলো row operation পরিষ্কার লিখে প্রতিটি step audit করা।</p>
+<h3 id="1-elementary-transformations-ero-eco">1. Elementary transformations (ERO/ECO)</h3>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Operation</strong></th>
+<th><strong>Row form</strong></th>
+<th><strong>What it does</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Interchange</td>
+<td>Rᵢ &lt;-&gt; Rⱼ</td>
+<td>row swap</td>
+</tr>
+<tr class="even">
+<td>Scaling</td>
+<td>Rᵢ -&gt; kRᵢ, k≠0</td>
+<td>pivot normalize</td>
+</tr>
+<tr class="odd">
+<td>Replacement</td>
+<td>Rᵢ -&gt; Rᵢ + kRⱼ</td>
+<td>eliminate an entry</td>
+</tr>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Exam discipline</strong> যে operation করবেন, left margin-এ লিখুন। এক line-এ অনেক operation করলে sign error ধরা কঠিন হয়।</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<h3 id="2-inverse-by-gauss-jordan-elementary-row-transformation">2. Inverse by Gauss-Jordan elementary row transformation</h3>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><p><strong>[ A | I ] --same row operations--&gt; [ I | A⁻¹ ]</strong></p>
+<p>possible only when A is nonsingular / full rank</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p>Invertibility quick test for n×n square A: det(A)≠0 ⇔ rank(A)=n ⇔ A⁻¹ exists. এই তিনটি condition-কে D-R-I হিসেবে মনে রাখুন: Determinant, Rank, Inverse.</p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Shortcut — D-R-I</strong> det ≠ 0 -&gt; full rank -&gt; inverse exists. det = 0 -&gt; rank&lt;n -&gt; inverse does not exist.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p><strong>Worked class-note example</strong></p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>A = [[-2,1,3],[0,-1,1],[1,2,0]], det(A)=8 ≠ 0</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p>Augment with identity and row-reduce. The class-note Gauss-Jordan sequence yields:</p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>A⁻¹ = [[-1/4, 3/4, 1/2],[1/8, -3/8, 1/4],[1/8, 5/8, 1/4]]</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Final check</strong> A·A⁻¹=I (or A⁻¹·A=I) লিখে verify করুন। বিশেষ করে fraction-heavy inverse-এ এই check marks বাঁচায়।</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<h3 id="3-rank-independent-information">3. Rank — “কতগুলো independent information আছে?”</h3>
+<p>Rank is the maximum number of linearly independent rows/columns. Row-reduction-এ rank = echelon form-এর nonzero rows/pivots-এর সংখ্যা।</p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>rank(A) = number of pivots = number of nonzero rows in REF</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p>Important: elementary row/column operations rank পরিবর্তন করে না। Normal form [Iᵣ 0; 0 0]-এ identity block-এর order r-ই rank.</p>
+<h3 id="4-consistent-inconsistent-system-rouch-capelli-rank-rule">4. Consistent / inconsistent system — Rouché-Capelli rank rule</h3>
+<p><img src="assets/media/section-a/media/image2.png" style="width:6.4in;height:3.30039in"/></p>
+<p><em>Decision tree for Ax=b using rank(A), rank([A|b]) and number of unknowns n.</em></p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Shortcut — R-R-n</strong> Step 1: rank(A) বনাম rank([A|b]) compare. Step 2: equal হলে common rank r বনাম unknown count n compare.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Condition</strong></th>
+<th><strong>Conclusion</strong></th>
+<th><strong>বাংলা meaning</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>r(A) ≠ r([A|b])</td>
+<td>Inconsistent</td>
+<td>সমাধান নেই</td>
+</tr>
+<tr class="even">
+<td>r(A)=r([A|b])=n</td>
+<td>Unique solution</td>
+<td>একটি সমাধান</td>
+</tr>
+<tr class="odd">
+<td>r(A)=r([A|b])&lt;n</td>
+<td>Infinitely many solutions</td>
+<td>অসীম সমাধান / free variable আছে</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Parameter technique example</strong></p>
+<p>System: x+y+z=1; 2x+3y+4z=2; x+2y+3z=k. Coefficient-wise, row 2 = row 1 + row 3. Therefore consistency demands RHS 2 = 1+k, so k=1.</p>
+<p>If k=1, rank(A)=rank([A|b])=2&lt;3 -&gt; infinitely many solutions. If k≠1, augmented rank becomes larger -&gt; inconsistent.</p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Fast insight</strong> Parameter problem-এ আগে coefficient rows-এর relation খুঁজুন। RHS একই relation মানে কিনা দেখলে অনেক সময় full elimination ছাড়াই condition পাওয়া যায়।</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<h3 id="5-homogeneous-system-ax-0-trivial-vs-non-trivial">5. Homogeneous system Ax=0: trivial vs non-trivial</h3>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Ax = 0 always has x=0 (trivial solution).</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Case</strong></th>
+<th><strong>Square A</strong></th>
+<th><strong>General m×n viewpoint</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Only trivial</td>
+<td>det(A)≠0</td>
+<td>rank(A)=n (no free variable)</td>
+</tr>
+<tr class="even">
+<td>Non-trivial exists</td>
+<td>det(A)=0</td>
+<td>rank(A)&lt;n (at least one free variable)</td>
+</tr>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>বাংলা cue</strong> Trivial = সব variable zero. Non-trivial = অন্তত একটি variable nonzero.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<h3 id="6-linear-dependence-independence">6. Linear dependence / independence</h3>
+<p>Vectors v1,...,vn are linearly independent if c1 v1 + c2 v2 + ... + cn vn = 0 only has c1=c2=...=cn=0. Otherwise they are dependent.</p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Put vectors as columns of M. If rank(M)=number of vectors -&gt; independent; otherwise dependent.</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p>Example: v1=(1,2,1), v2=(2,1,3), v3=(3,3,4). Since v3=v1+v2, the set is dependent immediately — no determinant needed.</p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Shortcut</strong> প্রথমে obvious relation খুঁজুন (sum, multiple, zero vector). না পেলে rank/determinant method নিন।</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<h3 id="7-inverse-existence-checklist">7. Inverse existence checklist</h3>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Equivalent statement for square A</strong></th>
+<th><strong>Exam use</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>det(A)≠0</td>
+<td>fastest numerical test</td>
+</tr>
+<tr class="even">
+<td>rank(A)=n</td>
+<td>row-reduction context</td>
+</tr>
+<tr class="odd">
+<td>Ax=0 has only trivial solution</td>
+<td>systems context</td>
+</tr>
+<tr class="even">
+<td>columns/rows are linearly independent</td>
+<td>vector context</td>
+</tr>
+<tr class="odd">
+<td>A row-reduces to I</td>
+<td>Gauss-Jordan context</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Matching questions from the question bank — A2</strong></p>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Year / Q</strong></th>
+<th><strong>Matching question family</strong></th>
+<th><strong>Priority</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2015 Q2-Q4</td>
+<td>Inverse by ERO; parameter consistency; homogeneous non-trivial; vector dependence</td>
+<td>★★★</td>
+</tr>
+<tr class="even">
+<td>2016 Q2-Q3</td>
+<td>Inverse/existence; systems; trivial vs non-trivial</td>
+<td>★★★</td>
+</tr>
+<tr class="odd">
+<td>2017 Q6</td>
+<td>Inverse by ERO + consistency/system classification</td>
+<td>★★★</td>
+</tr>
+<tr class="even">
+<td>2018 Q1/Q3</td>
+<td>Inverse by ERO + consistency / many solutions</td>
+<td>★★★</td>
+</tr>
+<tr class="odd">
+<td>2019 Q1-Q2</td>
+<td>Parameter solution; parameter-dependent rank; inverse work</td>
+<td>★★★</td>
+</tr>
+<tr class="even">
+<td>2020 Q3/Q6</td>
+<td>Augmented system, consistency, rank/adjoint</td>
+<td>★★</td>
+</tr>
+<tr class="odd">
+<td>2021 Q4 / Sec-B system</td>
+<td>Inverse by ERO + linear systems</td>
+<td>★★</td>
+</tr>
+<tr class="even">
+<td>2022 Q4</td>
+<td>Parameter-dependent solution type</td>
+<td>★★★</td>
+</tr>
+<tr class="odd">
+<td>2023 Q5-Q6</td>
+<td>Inverse/product of elementary matrices; dependence; homogeneous/system parameters</td>
+<td>★★★</td>
+</tr>
+<tr class="even">
+<td>2024 Q5-Q6</td>
+<td>Dependence; invertibility/inverse; parameter system</td>
+<td>★★★</td>
+</tr>
+<tr class="odd">
+<td>2025 Q2</td>
+<td>Inverse existence + ERO; parameter system; dependence</td>
+<td>★★★</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>VERY HIGH PRIORITY</strong></p>
+<h2 id="set-a3-echelon-canonical-normal-form-eigen-block">SET A3 — Echelon / Canonical / Normal Form + Eigen Block</h2>
+<p>এই set-এ দুইটি recurring engine আছে: (i) row/column reduction ও rank, (ii) characteristic equation থেকে eigenvalue/eigenvector. Step-order ঠিক রাখাই মূল।</p>
+<h3 id="1-ref-rref-row-canonical-and-normal-form">1. REF, RREF (row canonical) and normal form</h3>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Form</strong></th>
+<th><strong>Core condition</strong></th>
+<th><strong>Use</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>REF / Echelon</td>
+<td>nonzero rows above zero rows; pivots staircase to the right; entries below pivots zero</td>
+<td>rank + back substitution</td>
+</tr>
+<tr class="even">
+<td>RREF / Row canonical</td>
+<td>REF + each pivot is 1 and the only nonzero entry in its column</td>
+<td>canonical row solution form</td>
+</tr>
+<tr class="odd">
+<td>Normal form (equivalence)</td>
+<td>using row + column ops: [Iᵣ 0; 0 0]</td>
+<td>rank + equivalence</td>
+</tr>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Accuracy note</strong> Some class slides normalize REF pivots to 1. Standard REF only requires a nonzero leading entry; normalizing it to 1 is allowed and convenient. RREF, however, definitely requires pivot 1 and zeros above/below each pivot.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<h3 id="2-reduction-workflow">2. Reduction workflow</h3>
+<h3 id="1-create-first-pivot-clear-entries-below-it">1. Create first pivot; clear entries below it.</h3>
+<h3 id="2-move-to-next-row-column-repeat-staircase-elimination-ref">2. Move to next row/column; repeat staircase elimination -&gt; REF.</h3>
+<h3 id="3-normalize-pivots-to-1-and-clear-above-pivots-rref-row-canonical-form">3. Normalize pivots to 1 and clear above pivots -&gt; RREF / row canonical form.</h3>
+<h3 id="4-if-normal-form-is-required-use-column-operations-too-to-convert-rref-to-i-0-0-0">4. If normal form is required, use column operations too to convert RREF to [Iᵣ 0;0 0].</h3>
+<h3 id="5-rank-number-of-pivots-r">5. Rank = number of pivots = r.</h3>
+<p><strong>Small worked example</strong></p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>E = [[1,2,1],[2,4,2],[1,1,0]]</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>RREF(E) = [[1,0,-1],[0,1,1],[0,0,0]], rank(E)=2</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p>Then column operation C₃ -&gt; C₃ + C₁ − C₂ gives normal form diag(1,1,0).</p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Normal-form cue</strong> Normal form দেখলেই block identity চিনুন: identity block-এর size = rank.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<h3 id="3-tracking-p-and-q-in-paq-normal-form">3. Tracking P and Q in PAQ = normal form</h3>
+<p>If a problem asks for non-singular P,Q such that PAQ=N, keep a “shadow identity” beside A: every row operation on A is applied to the left identity to build P; every column operation is applied to the right identity to build Q.</p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>P A Q = N = [[Iᵣ,0],[0,0]]</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Common mistake</strong> Row operations generate left multiplication (P·A). Column operations generate right multiplication (A·Q). এই দিক উল্টে ফেলবেন না।</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<h3 id="4-eigenvalue-and-eigenvector-intuition">4. Eigenvalue and eigenvector — intuition</h3>
+<p><img src="assets/media/section-a/media/image3.png" style="width:6.2in;height:3.40563in"/></p>
+<p><em>Eigenvector একটি বিশেষ direction: A প্রয়োগ করলে vector সেই একই line-এ থাকে; শুধু scale (এবং λ&lt;0 হলে direction sense) বদলায়.</em></p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>A x = λ x, x ≠ 0</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>বাংলা cue</strong> Eigenvector = transformation-এর পর “দিকের line একই”; eigenvalue λ = কত গুণ stretch/shrink (বা sign flip) হলো।</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<h3 id="5-d-s-v-algorithm-for-eigen-problems">5. D-S-V algorithm for eigen problems</h3>
+<h3 id="1-d-determinant-form-det-a-i-0-or-monic-det-i-a-0">1. D — Determinant: form det(A−λI)=0 (or monic det(λI−A)=0).</h3>
+<h3 id="2-s-solve-the-characteristic-equation-for">2. S — Solve the characteristic equation for λ.</h3>
+<h3 id="3-v-vector-for-each-solve-a-i-x-0-and-take-any-nonzero-solution">3. V — Vector: for each λ solve (A−λI)x=0 and take any nonzero solution.</h3>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Sign convention</strong> det(A−λI)=0 এবং det(λI−A)=0 roots একই দেয় (global sign may differ for odd order). একটি convention ধরে শেষ পর্যন্ত consistent থাকুন।</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p><strong>Worked class-note example</strong></p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>A = [[1,1,3],[1,5,1],[3,1,1]]</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p>Characteristic equation gives eigenvalues λ = -2, 3, 6. Corresponding convenient eigenvectors are:</p>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>λ</strong></th>
+<th><strong>One eigenvector x</strong></th>
+<th><strong>Quick check</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>-2</td>
+<td>(-1, 0, 1)^T</td>
+<td>Ax=-2x</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>(1, -1, 1)^T</td>
+<td>Ax=3x</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>(1, 2, 1)^T</td>
+<td>Ax=6x</td>
+</tr>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Eigenvector freedom</strong> If x is an eigenvector, any nonzero scalar multiple cx is also an eigenvector for the same λ. তাই answer অন্য multiple হলেও correct.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<h3 id="6-high-value-eigen-properties">6. High-value eigen properties</h3>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Property</strong></th>
+<th><strong>Formula / statement</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Trace</td>
+<td>Σ eigenvalues = tr(A), counting algebraic multiplicity</td>
+</tr>
+<tr class="even">
+<td>Determinant</td>
+<td>Π eigenvalues = det(A)</td>
+</tr>
+<tr class="odd">
+<td>Triangular matrix</td>
+<td>eigenvalues are diagonal entries</td>
+</tr>
+<tr class="even">
+<td>Transpose</td>
+<td>A and A^T have the same characteristic polynomial/eigenvalues</td>
+</tr>
+<tr class="odd">
+<td>Inverse</td>
+<td>if A invertible: eigenvalues of A⁻¹ are 1/λ</td>
+</tr>
+<tr class="even">
+<td>Power</td>
+<td>if Ax=λx, then A^m x = λ^m x</td>
+</tr>
+<tr class="odd">
+<td>Distinct λ</td>
+<td>eigenvectors from distinct eigenvalues are linearly independent</td>
+</tr>
+<tr class="even">
+<td>Real symmetric A</td>
+<td>eigenvalues real; eigenvectors for distinct λ are orthogonal</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="7-diagonalization">7. Diagonalization</h3>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><p><strong>A = P D P⁻¹ ⇔ P⁻¹ A P = D</strong></p>
+<p>columns of P are independent eigenvectors; D carries matching eigenvalues</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p>An n×n matrix is diagonalizable if it has n linearly independent eigenvectors.</p>
+<p><strong>Worked 2×2 example</strong></p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>H = [[4,1],[2,3]]; λ1=5 with v1=(1,1)^T; λ2=2 with v2=(-1,2)^T</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>P=[[1,-1],[1,2]], D=diag(5,2), P⁻¹HP=D</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Ordering rule</strong> P-এর column order এবং D-এর diagonal eigenvalue order অবশ্যই match করবে।</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p><strong>Matching questions from the question bank — A3</strong></p>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Year / Q</strong></th>
+<th><strong>Matching question family</strong></th>
+<th><strong>Priority</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2015 Q2-Q4</td>
+<td>Echelon-&gt;canonical-&gt;normal + rank; eigen/large eigen; eigen properties</td>
+<td>★★★</td>
+</tr>
+<tr class="even">
+<td>2016 Q2/Q4</td>
+<td>Row-reduced/normal/rank; eigenvalues/eigenvectors</td>
+<td>★★★</td>
+</tr>
+<tr class="odd">
+<td>2017 Q5/Q7-Q8</td>
+<td>Forms/rank; eigen; find P,Q for normal form</td>
+<td>★★★</td>
+</tr>
+<tr class="even">
+<td>2018 Q2/Q4</td>
+<td>Forms, P,Q; eigen block</td>
+<td>★★★</td>
+</tr>
+<tr class="odd">
+<td>2019 Q2-Q4</td>
+<td>Eigen / diagonalization / characteristic equation variants</td>
+<td>★★★</td>
+</tr>
+<tr class="even">
+<td>2020 Q3/Q6</td>
+<td>Eigen + rank</td>
+<td>★★</td>
+</tr>
+<tr class="odd">
+<td>2021 Q7</td>
+<td>Eigenvalues/eigenvectors</td>
+<td>★★</td>
+</tr>
+<tr class="even">
+<td>2022 Q4/Q7</td>
+<td>Normal/rank + largest eigen</td>
+<td>★★★</td>
+</tr>
+<tr class="odd">
+<td>2023 Q6-Q7</td>
+<td>Normal/PQ + inverse-eigenvalue properties</td>
+<td>★★★</td>
+</tr>
+<tr class="even">
+<td>2024 Q6-Q7</td>
+<td>Normal/PQ + eigen block</td>
+<td>★★★</td>
+</tr>
+<tr class="odd">
+<td>2025 Q3</td>
+<td>Echelon/canonical/normal + P,Q + eigenvalues/eigenvectors</td>
+<td>★★★</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A3 rapid self-test</strong></p>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Task</strong></th>
+<th><strong>You should be able to do it in</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Convert a 3x3 matrix to REF/RREF and state rank</td>
+<td>4-6 min</td>
+</tr>
+<tr class="even">
+<td>Recognize / produce normal form [I_r 0;0 0]</td>
+<td>2 min</td>
+</tr>
+<tr class="odd">
+<td>Find eigenvalues then one eigenvector for each λ</td>
+<td>6-8 min</td>
+</tr>
+<tr class="even">
+<td>Build P,D for a diagonalizable 2x2 matrix</td>
+<td>4 min</td>
+</tr>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>D-S-V check</strong> Determinant -&gt; Solve λ -&gt; Vector. If this sequence is automatic, most eigen questions become routine.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p><strong>MEDIUM-HIGH PRIORITY / STRONG BACKUP</strong></p>
+<h2 id="set-a4-vector-kinematics-work-done-cayley-hamilton">SET A4 — Vector Kinematics, Work Done &amp; Cayley-Hamilton</h2>
+<p>Set A4 formula-driven. Vector motion-এর diagram/geometry বুঝে নিলে memorization অনেক কমে যায়। Work done-এ parameterization এবং Cayley-Hamilton-এ characteristic polynomial-এর discipline সবচেয়ে গুরুত্বপূর্ণ।</p>
+<h3 id="1-position-velocity-speed-and-acceleration">1. Position, velocity, speed and acceleration</h3>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>r(t)=x(t)i+y(t)j+z(t)k | v=r′(t) | speed=|v| | a=r″(t)</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>বাংলা cue</strong> Position r = “কোথায় আছি”; velocity v = “কোন দিকে কত দ্রুত যাচ্ছি”; acceleration a = “velocity কত দ্রুত বদলাচ্ছে”.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p>Velocity vector tangent to the path. Acceleration need not be tangent; it can have tangential and normal components.</p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>a = a_T T + a_N N, a_T = d|v|/dt, a_N = κ |v|²</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<h3 id="2-frenet-frame-t-n-b">2. Frenet frame: T, N, B</h3>
+<p><img src="assets/media/section-a/media/image4.png" style="width:5.7in;height:4.99955in"/></p>
+<p><em>At a regular point P, T follows the curve, N points toward bending, B=T×N completes the perpendicular frame.</em></p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>T = r′/|r′| | B = (r′×r″)/|r′×r″| | N = B×T</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Memory hook</strong> v -&gt; T, then bending gives N, and T×N -&gt; B. তিনটি unit vector পরস্পর perpendicular.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<h3 id="3-curvature-torsion-and-the-three-planes">3. Curvature, torsion and the three planes</h3>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>κ = |r′×r″| / |r′|³ | τ = ((r′×r″)·r‴) / |r′×r″|²</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Object</strong></th>
+<th><strong>Normal vector</strong></th>
+<th><strong>Equation at point r₀</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Normal plane</td>
+<td>T</td>
+<td>T·(r-r₀)=0</td>
+</tr>
+<tr class="even">
+<td>Osculating plane</td>
+<td>B</td>
+<td>B·(r-r₀)=0</td>
+</tr>
+<tr class="odd">
+<td>Rectifying plane</td>
+<td>N</td>
+<td>N·(r-r₀)=0</td>
+</tr>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>বাংলা meaning</strong> Curvature κ = curve কত তীব্র বাঁকছে। Torsion τ = curve space-এ osculating plane থেকে কত দ্রুত মোচড়াচ্ছে।</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p><strong>Worked reference-note example at t=2</strong></p>
+<p>Curve: r(t)=(t²−1)i+(4t−3)j+(2t²−6t)k. At t=2: r₀=(3,5,-4), v=(4,4,2), |v|=6.</p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>T=(2,2,1)/3 | N=(1,-8,14)/(3√29) | B=(4,-3,-2)/√29</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>κ=√29/54, τ=0, radius of curvature ρ=54/√29</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Normal plane: 2x+2y+z-12=0</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Osculating plane: 4x-3y-2z-5=0</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Rectifying plane: x-8y+14z+93=0</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Interpretation</strong> For this quadratic curve, d^3r/dt^3 = 0; therefore τ=0 throughout the regular part. Hence the curve is planar and its osculating plane is fixed.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<h3 id="4-work-done-by-a-force-field">4. Work done by a force field</h3>
+<p><img src="assets/media/section-a/media/image5.png" style="width:6.1in;height:3.18657in"/></p>
+<p><em>F-এর tangent-direction component-টাই কাজ করে; তাই dot product naturally appears.</em></p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>W = ∫_C F·dr = ∫ [P dx + Q dy + R dz]</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<h3 id="1-choose-one-parameter-t-or-x-for-the-entire-path">1. Choose one parameter (t or x) for the entire path.</h3>
+<h3 id="2-write-x-y-z-and-dx-dy-dz-in-that-parameter">2. Write x,y,z and dx,dy,dz in that parameter.</h3>
+<h3 id="3-substitute-into-f-dr">3. Substitute into F·dr.</h3>
+<h3 id="4-use-correct-parameter-limits-and-integrate">4. Use correct parameter limits and integrate.</h3>
+<h3 id="5-for-a-piecewise-path-calculate-each-segment-separately-and-add">5. For a piecewise path, calculate each segment separately and add.</h3>
+<p><strong>Repeated KUET question pattern — 2016 &amp; 2017</strong></p>
+<p>A=(2y+3)i + xz j + (yz−x)k. Evaluate ∫A·dr (i) along O-&gt;(0,0,1)-&gt;(0,1,1)-&gt;(2,1,1), and (ii) along the straight line O-&gt;(2,1,1).</p>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Path</strong></th>
+<th><strong>Parameter idea</strong></th>
+<th><strong>Answer</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Piecewise</td>
+<td>three segments; two give 0, last gives ∫₀²5dx</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>Straight</td>
+<td>x=2t, y=t, z=t, 0≤t≤1</td>
+<td>8</td>
+</tr>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>What this teaches</strong> Same endpoints হলেও field conservative না হলে path বদলালে work বদলাতে পারে. এখানে 10 ≠ 8, so path dependence is visible.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p><strong>Another repeated family — 2020 &amp; 2024</strong></p>
+<p>F=3x²i+(2xz−y)j+zk, along x²=4y and 3x³=8z from x=0 to 2. Parameterize by x; the compiled question solution gives W=16.</p>
+<h3 id="5-force-motion">5. Force -&gt; motion</h3>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>F = m a = m r″(t)</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p>If force F(t) is known, integrate acceleration to get velocity, then integrate velocity to get position. Each integration introduces a constant fixed by initial conditions r(t₀), v(t₀).</p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Shortcut</strong> F -&gt; a -&gt; v -&gt; r. Arrow direction is “integrate twice”; going backward r-&gt;v-&gt;a means differentiate.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<h3 id="6-cayley-hamilton-theorem">6. Cayley-Hamilton theorem</h3>
+<p><img src="assets/media/section-a/media/image6.png" style="width:6.6in;height:1.98648in"/></p>
+<p><em>Cayley-Hamilton workflow: turn the scalar characteristic equation into a matrix identity.</em></p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>If p(λ)=det(λI-A), then every square matrix A satisfies p(A)=0.</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p>Main uses in this course: (i) verify that a matrix satisfies its characteristic equation, (ii) reduce high powers Aⁿ, (iii) find A⁻¹ when det(A)≠0.</p>
+<p><strong>Worked inverse example</strong></p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>A=[[1,2],[3,4]], p(λ)=λ²-5λ-2</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>By C-H: A²-5A-2I=0. Multiply by A⁻¹: A-5I-2A⁻¹=0.</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>A⁻¹ = ½(A-5I) = [[-2,1],[3/2,-1/2]]</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>CH shortcut</strong> Inverse বের করতে characteristic equation-এ constant term c₀≠0 হলে terms rearrange করে A⁻¹ isolate করুন. High power হলে equation repeatedly use করে power কমান।</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p><strong>Matching questions from the question bank — A4</strong></p>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Year / Q</strong></th>
+<th><strong>Matching question family</strong></th>
+<th><strong>Priority</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2015 Q5</td>
+<td>Particle velocity/acceleration + vector motion concepts</td>
+<td>★★</td>
+</tr>
+<tr class="even">
+<td>2016 Q7 / 2017 Q4</td>
+<td>Repeated line/work integral along piecewise vs direct path</td>
+<td>★★★</td>
+</tr>
+<tr class="odd">
+<td>2018 vector set</td>
+<td>Tangent/force/work and scalar triple product families</td>
+<td>★★</td>
+</tr>
+<tr class="even">
+<td>2020 Q1-Q2</td>
+<td>Vector derivative/work; work field later repeats in 2024</td>
+<td>★★★</td>
+</tr>
+<tr class="odd">
+<td>2021 Q1-Q2</td>
+<td>Moving particle, T/N/B/curvature-type geometry + work</td>
+<td>★★★</td>
+</tr>
+<tr class="even">
+<td>2022 vector section</td>
+<td>Directional/vector geometry; work/integration families</td>
+<td>★★</td>
+</tr>
+<tr class="odd">
+<td>2023 Q8 / vector block</td>
+<td>Particle velocity/acceleration and vector curve questions</td>
+<td>★★</td>
+</tr>
+<tr class="even">
+<td>2024 Q2 + CH block</td>
+<td>Work question repeats 2020; Cayley-Hamilton verify/use</td>
+<td>★★★</td>
+</tr>
+<tr class="odd">
+<td>2025 Q4</td>
+<td>Particle motion, work, Cayley-Hamilton theorem/inverse family</td>
+<td>★★★</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A4 rapid self-test</strong></p>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Formula sprint</strong> From memory write: v=r'(t), a=r''(t), T, B, N, curvature κ, torsion τ, work W=∫F·dr, and the Cayley-Hamilton statement. Then solve one parameterized work integral without looking at the note.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p><strong>FINAL REVISION</strong></p>
+<p><strong>SECTION A — One-page Formula &amp; Decision Sheet</strong></p>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Block</strong></th>
+<th><strong>Must-remember formulas / rules</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Matrix types</td>
+<td>A^T=A symmetric; A^T=-A skew; A^TA=I orthogonal; A²=A idempotent; A²=I involutory; A^k=0 nilpotent</td>
+</tr>
+<tr class="even">
+<td>Decomposition</td>
+<td>A=½(A+A^T)+½(A-A^T); complex version uses A†</td>
+</tr>
+<tr class="odd">
+<td>Invertible</td>
+<td>det A≠0 ⇔ rank A=n ⇔ A⁻¹ exists ⇔ Ax=0 only trivial</td>
+</tr>
+<tr class="even">
+<td>Inverse ERO</td>
+<td>[A|I] -&gt; [I|A⁻¹]</td>
+</tr>
+<tr class="odd">
+<td>Consistency</td>
+<td>r(A)≠r([A|b]) no solution; equal rank=n unique; equal rank&lt;n infinite</td>
+</tr>
+<tr class="even">
+<td>Forms</td>
+<td>REF staircase; RREF pivot 1 &amp; pivot column cleared; normal=[Iᵣ 0;0 0]</td>
+</tr>
+<tr class="odd">
+<td>Eigen</td>
+<td>det(A-λI)=0; then (A-λI)x=0; diagonalize A=PDP⁻¹</td>
+</tr>
+<tr class="even">
+<td>Vector motion</td>
+<td>v=r′, a=r″, T=v/|v|, B=(r′×r″)/|r′×r″|, N=B×T</td>
+</tr>
+<tr class="odd">
+<td>Curve geometry</td>
+<td>κ=|r′×r″|/|r′|³; τ=((r′×r″)·r‴)/|r′×r″|²</td>
+</tr>
+<tr class="even">
+<td>Work</td>
+<td>W=∫F·dr</td>
+</tr>
+<tr class="odd">
+<td>Cayley-Hamilton</td>
+<td>p(λ)=det(λI-A) ⇒ p(A)=0</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof / derivation priority list</strong></p>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Priority</strong></th>
+<th><strong>Proof / derivation</strong></th>
+<th><strong>Why</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>A = symmetric + skew-symmetric, uniqueness</td>
+<td>Repeated and easy marks</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>skew-symmetric diagonal entries are zero</td>
+<td>Very short proof</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>symmetric nonsingular ⇒ inverse symmetric</td>
+<td>One identity proof</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>involutory ⇒ ½(I±A) idempotent</td>
+<td>Repeated expansion pattern</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>direction-cosine matrix orthogonal</td>
+<td>Orthogonality proof</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Cayley-Hamilton verify + use for inverse</td>
+<td>Longer, high-mark backup</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Common mistakes — last-minute warning</strong></p>
+<ul>
+<li><p>Equivalent vs row-equivalent: full equivalence may use row + column operations (B=PAQ); row-equivalence uses row operations only (B=PA).</p></li>
+<li><p>RREF/canonical and normal form are not the same object. Normal form under equivalence is [Iᵣ 0;0 0].</p></li>
+<li><p>In eigen problems, x=0 is never an eigenvector.</p></li>
+<li><p>For diagonalization, keep eigenvector column order in P aligned with eigenvalue order in D.</p></li>
+<li><p>In consistency problems, never decide unique/infinite before first checking r(A)=r([A|b]).</p></li>
+<li><p>In inverse problems, row operations must be applied to the whole augmented matrix [A|I].</p></li>
+<li><p>In line integral, change dx,dy,dz together with x,y,z after parameterization.</p></li>
+<li><p>In TNB problems, normalize carefully; B is based on r′×r″ and N=B×T for the convention used here.</p></li>
+<li><p>Cayley-Hamilton: use one characteristic-polynomial sign convention consistently.</p></li>
+</ul>
+<p><strong>3-out-of-4 practical decision plan</strong></p>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>If exam paper looks like...</strong></th>
+<th><strong>Recommended 3 sets</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Standard / balanced</td>
+<td>A1 + A2 + A3</td>
+</tr>
+<tr class="even">
+<td>A3 eigen algebra is unusually ugly</td>
+<td>A1 + A2 + A4</td>
+</tr>
+<tr class="odd">
+<td>A1 theory contains unfamiliar niche definitions</td>
+<td>A2 + A3 + A4</td>
+</tr>
+<tr class="even">
+<td>A2 parameter system is long but A4 is familiar</td>
+<td>A1 + A3 + A4</td>
+</tr>
+</tbody>
+</table></div>
+<div class="callout"><table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Best default</strong> Prepare A1-A3 to full confidence and A4 to at least 70%. That gives you an escape route without weakening the three most repeated blocks.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p><strong>Source basis used for this class note</strong></p>
+<ul>
+<li><p>Matrix Lec 01: types of matrices, transpose, elementary/equivalent matrices, trace and related examples.</p></li>
+<li><p>Matrix Lec 02: elementary row/column operations, echelon, row-canonical/RREF and normal form.</p></li>
+<li><p>Matrix Lec 03-04: consistent/inconsistent systems, rank criteria and dependence/independence.</p></li>
+<li><p>Matrix Lec 05: inverse by elementary transformation / Gauss-Jordan.</p></li>
+<li><p>Matrix Lec 07: eigenvalue/eigenvector definition and worked problems.</p></li>
+<li><p>Uploaded KUET Math 2123 term-question collection and 2015-2024 topic compilations for matching-question tags.</p></li>
+<li><p>Uploaded H.K. Dass / matrix reference books for formula checks and supporting derivations.</p></li>
+</ul>
+<p><strong>Made by K.I.Rohan</strong></p>
+</article></div></main>
+<footer class="site-footer"><div><b>Math 2123: Mathematics-III</b><span>Complete KUET-oriented study guide</span></div><div class="footer-credit">Made by <strong>K.I.Rohan</strong></div></footer>
+<div class="search-modal" data-search-modal hidden><div class="search-panel"><div class="search-head"><input data-search-input placeholder="Search sets, formulas, questions…" autocomplete="off"><button class="icon-btn" data-search-close>✕</button></div><div class="search-hint">Press <kbd>Ctrl</kbd> + <kbd>K</kbd> anywhere to search.</div><div data-search-results class="search-results"></div></div></div>
+<button class="to-top" data-to-top aria-label="Back to top">↑</button>
+</body></html>

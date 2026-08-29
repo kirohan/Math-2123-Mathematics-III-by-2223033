@@ -1,0 +1,9 @@
+{
+  "name": "Math 2123: Mathematics-III Complete Guide",
+  "short_name": "Math 2123",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f6f8fb",
+  "theme_color": "#0b3b66",
+  "icons": []
+}
