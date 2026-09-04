@@ -9,6 +9,7 @@ A responsive, searchable, GitHub Pages-ready study website for KUET Math 2123.
 - Class Note — Section B (B5–B8)
 - Question Bank Analysis
 - Question Bank Solution Library
+- Past Papers — 2015–2025 questions + full solution guides
 - Complete Backlog Preparation Guide
 - Formula + Theory + Proof Vault
 - Mobile navigation, dark mode, global search, local study progress, print mode, PWA shell
@@ -27,3 +28,6 @@ The site intentionally uses plain HTML/CSS/JavaScript so GitHub Pages needs no b
 - Visual theme: `assets/css/styles.css`
 - Main pages: root-level `.html` files
 - Optional PDF archives: `resources/`
+
+## Past paper archive
+`past-papers.html` provides year-by-year question PDFs and beginner-friendly solution PDFs for 2015–2025. The 2022 archive includes the supplied third page (Question 8). Files live under `resources/past-papers/`.
